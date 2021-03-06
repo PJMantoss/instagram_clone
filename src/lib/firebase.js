@@ -10,3 +10,5 @@ const firebaseConfig = {
     //firebase.initializeApp(firebaseConfig);
 
     const firebase = window.firebase.initializeApp(firebaseConfig);
+
+    export { firebase };
