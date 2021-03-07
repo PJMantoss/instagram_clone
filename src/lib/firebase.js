@@ -15,4 +15,6 @@ const firebaseConfig = {
 
     const { fieldValue } = window.firebase.firestore;
 
+    //seedDatabase(firebase);
+
     export { firebase, fieldValue };
