@@ -3,7 +3,7 @@ export function seedDatabase(firebase) {
       {
         userId: 'UiN5nE9OAbXNoYvztaupnaRrYKk1',
         username: 'karl',
-        fullName: '',
+        fullName: 'PJ Mantoss',
         emailAddress: 'karlhadwen@gmail.com',
         following: ['2'],
         followers: ['2', '3', '4'],
