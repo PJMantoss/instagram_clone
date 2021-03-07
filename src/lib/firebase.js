@@ -13,4 +13,4 @@ const firebaseConfig = {
 
     const { fieldValue } = windows.firebase.firestore;
 
-    export { firebase };
+    export { firebase, fieldValue };
