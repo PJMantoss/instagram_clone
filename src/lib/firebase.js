@@ -1,3 +1,5 @@
+import {} from '../seed';
+
 const firebaseConfig = {
       apiKey: "AIzaSyC1MIR55EmC-37J7oDhQ3xNWct24HYzlNo",
       authDomain: "instagram-clone-9b6ce.firebaseapp.com",
