@@ -11,4 +11,6 @@ const firebaseConfig = {
 
     const firebase = window.firebase.initializeApp(firebaseConfig);
 
+    const { fieldValue } = windows.firebase.firestore;
+
     export { firebase };
