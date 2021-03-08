@@ -1,6 +1,4 @@
 import logo from './logo.svg';
-import { firebase, fieldValue } from './lib/firebase';
-import FirebaseContext from './context/firebase';
 import './App.css';
 
 function App() {
