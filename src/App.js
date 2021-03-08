@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import React, {lazy, Suspense} from 'react';
 import './App.css';
 
 function App() {
