@@ -1,7 +1,8 @@
 import React, {lazy, Suspense} from 'react';
 import './App.css';
 
-const Dashboard = lazy(() => import('/pages/'))
+const Dashboard = lazy(() => import('/pages/dashboard'));
+const Login = lazy(() => import('/pages/login'));
 
 function App() {
   return (
