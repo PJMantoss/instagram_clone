@@ -13,7 +13,9 @@ function App() {
   return (
       <Router>
         <Suspense fallback={<p>loading...</p>}>
-          <h1 className="text-red-500">This is where our content will be.</h1>
+          <Switch>
+            <Route path={ROUTES.} COMPONENT={}/>
+          </Switch>
         </Suspense>
       </Router>
   );
