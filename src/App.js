@@ -1,4 +1,5 @@
 import React, {lazy, Suspense} from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 
 const Dashboard = lazy(() => import('./pages/dashboard'));
