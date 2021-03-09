@@ -14,7 +14,9 @@ function App() {
       <Router>
         <Suspense fallback={<p>loading...</p>}>
           <Switch>
-            <Route path={ROUTES.} COMPONENT={}/>
+            <Route path={ROUTES.LOGIN} component={Login}/>
+            <Route path={ROUTES.SIGN_UP} component={SignUp}/>
+            <Route path={ROUTES.PROFILE} component={Profile}/>
           </Switch>
         </Suspense>
       </Router>
