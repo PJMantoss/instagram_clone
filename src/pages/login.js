@@ -40,8 +40,10 @@ export default function Login(){
                 </div>
                 
                 <div className="flex justify-center items-center flex-col w-full bg-white p-4 border">
-                    <p>
-                        <><>
+                    <p className="text-sm">
+                        <Link to={ROUTES.SIGN_UP}>
+                            Sign Up
+                        </Link>
                     </p>
                 </div>
             </div>
