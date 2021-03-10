@@ -13,7 +13,12 @@ export default function Login(){
                 </h1>
 
                 <form method="POST">
-                    <input aria-label="Enter your email address" className="" type="text" placeholder="" />
+                    <input 
+                        aria-label="Enter your email address" 
+                        className="" 
+                        type="text" 
+                        placeholder="Email address" 
+                    />
 
                     <input />
 
