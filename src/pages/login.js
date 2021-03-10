@@ -8,6 +8,7 @@ export default function Login(){
             </div>
 
             <div className="flex flex-col w-2/5">
+                <div className=""></div>
                 <h1 className="flex justify-center w-full">
                     <img src="./images/logo.png" alt="instagram" className="mt-2 w-6/12 mb-4" />
                 </h1>
@@ -27,7 +28,10 @@ export default function Login(){
                         placeholder="Password" 
                     />
 
-                    <button type="submit" className={}>
+                    <button 
+                        type="submit" 
+                        className={`bg-blue-500 text-white w-full rounded h-8 font-bold`}
+                    >
                         Log in
                     </button>
                 </form>
