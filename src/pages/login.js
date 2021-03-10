@@ -12,7 +12,13 @@ export default function Login(){
                     <img src="./images/logo.png" alt="instagram" className="mt-2 w-6/12 mb-4" />
                 </h1>
 
-                <form method="POST"></form>
+                <form method="POST">
+                    <input aria-label="Enter your email address" className="" type="text" placeholder="" />
+
+                    <input />
+
+                    <button></button>
+                </form>
             </div>
         </div>
     )
