@@ -2,6 +2,8 @@ import React from 'react';
 
 export default function Login(){
     return(
-        <h1>Hello from Login!</h1>
+        <div className="container flex mx-auto max-w-screen-md items-center h-screen">
+            Hello from Login!
+        </div>
     )
 }
