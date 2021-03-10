@@ -41,7 +41,7 @@ export default function Login(){
                 
                 <div className="flex justify-center items-center flex-col w-full bg-white p-4 border">
                     <p className="text-sm">
-                        <Link to={ROUTES.SIGN_UP}>
+                        <Link to={ROUTES.SIGN_UP} className="font-bold">
                             Sign Up
                         </Link>
                     </p>
