@@ -8,7 +8,9 @@ export default function Login(){
             </div>
 
             <div className="flex flex-col w-2/5">
-                <h1></h1>
+                <h1 className="flex justify-center w-full">
+                    <img src="./images/logo.png" alt="instagram" className="" />
+                </h1>
 
                 <form method="POST"></form>
             </div>
