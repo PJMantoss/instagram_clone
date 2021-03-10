@@ -7,7 +7,11 @@ export default function Login(){
                 <img src='./images/iphone-with-profile.jpg' alt="phone with IG profile" />
             </div>
 
-            <div className="flex flex-col w-2/5"></div>
+            <div className="flex flex-col w-2/5">
+                <h1></h1>
+
+                <form method="POST"></form>
+            </div>
         </div>
     )
 }
