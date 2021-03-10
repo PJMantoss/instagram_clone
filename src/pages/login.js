@@ -15,12 +15,17 @@ export default function Login(){
                 <form method="POST">
                     <input 
                         aria-label="Enter your email address" 
-                        className="" 
+                        className="text-sm w-full mr-3 py-5 px-4 h-2 border rounded mb-2" 
                         type="text" 
                         placeholder="Email address" 
                     />
 
-                    <input />
+                    <input 
+                        aria-label="Enter your password" 
+                        className="text-sm w-full mr-3 py-5 px-4 h-2 border rounded mb-2" 
+                        type="password" 
+                        placeholder="Password" 
+                    />
 
                     <button></button>
                 </form>
