@@ -37,7 +37,11 @@ export default function Login(){
                     </form>
                 </div>
                 
-                <div className="flex justify-center"></div>
+                <div className="flex justify-center items-center flex-col w-full bg-white p-4 border">
+                    <p>
+                        <><>
+                    </p>
+                </div>
             </div>
         </div>
     )
