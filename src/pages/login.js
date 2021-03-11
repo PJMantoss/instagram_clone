@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 import * as ROUTES from '../constants/routes';
 
 export default function Login(){
-    useEffect(() => {}, [])
+    useEffect(() => {
+        document.title = '';
+    }, [])
     return(
         <div className="container flex mx-auto max-w-screen-md items-center h-screen">
             <div className="flex w-3/5">
