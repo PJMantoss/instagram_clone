@@ -38,6 +38,7 @@ export default function Login(){
                             aria-label="Enter your password" 
                             className="text-sm w-full mr-3 py-5 px-4 h-2 border rounded mb-2" 
                             type="password" 
+                            value={password}
                             placeholder="Password" 
                             onChange = {({ target }) => setPassword(target.value)}
                         />
