@@ -4,7 +4,7 @@ import * as ROUTES from '../constants/routes';
 
 export default function Login(){
     const [emailAddress, setEmailAddress] = useState('');
-    const [] = useState('');
+    const [password, setPassword] = useState('');
 
     useEffect(() => {
         document.title = 'Login - Instagram';
