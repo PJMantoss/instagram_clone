@@ -6,6 +6,9 @@ export default function Login(){
     const [emailAddress, setEmailAddress] = useState('');
     const [password, setPassword] = useState('');
 
+    const [error, setError] = useState('');
+    const isInvalid = 
+
     useEffect(() => {
         document.title = 'Login - Instagram';
     }, [])
