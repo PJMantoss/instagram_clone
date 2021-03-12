@@ -39,6 +39,7 @@ export default function Login(){
                             className="text-sm w-full mr-3 py-5 px-4 h-2 border rounded mb-2" 
                             type="password" 
                             placeholder="Password" 
+                            onChange = {({ target }) => setPassword(target.value)}
                         />
 
                         <button 
