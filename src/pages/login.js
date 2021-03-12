@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import * as ROUTES from '../constants/routes';
 
 export default function Login(){
+    const [emailAddress, setEmailAddress] = useState('');
     const [] = useState('');
-    const [] = useState('');
-    
+
     useEffect(() => {
         document.title = 'Login - Instagram';
     }, [])
