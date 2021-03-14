@@ -19,7 +19,7 @@ export default function Login(){
             await 
         }catch(err){
             setEmailAddress('');
-            setEmailAddress('');
+            setPassword('');
         }
     }
 
