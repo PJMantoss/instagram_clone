@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import * as ROUTES from '../constants/routes';
 
 export default function Login(){
+    const { firebase } = useContext(FirebaseContext);
     const [emailAddress, setEmailAddress] = useState('');
     const [password, setPassword] = useState('');
 
