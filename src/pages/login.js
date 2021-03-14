@@ -14,6 +14,8 @@ export default function Login(){
 
     const handleChange = async (e) => {
         e.preventDefault();
+
+        try {}catch{}
     }
 
     useEffect(() => {
