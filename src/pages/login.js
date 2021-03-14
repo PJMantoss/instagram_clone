@@ -15,7 +15,11 @@ export default function Login(){
     const handleChange = async (e) => {
         e.preventDefault();
 
-        try {}catch{}
+        try {
+            await 
+        }catch(err){
+            setErro('');
+        }
     }
 
     useEffect(() => {
