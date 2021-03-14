@@ -5,12 +5,14 @@ import * as ROUTES from '../constants/routes';
 
 export default function Login(){
     const { firebase } = useContext(FirebaseContext);
-    
+
     const [emailAddress, setEmailAddress] = useState('');
     const [password, setPassword] = useState('');
 
     const [error, setError] = useState('');
     const isInvalid = emailAddress === '' || password === '';
+
+    const handleChange = async (e) {}
 
     useEffect(() => {
         document.title = 'Login - Instagram';
