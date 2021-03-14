@@ -18,7 +18,8 @@ export default function Login(){
         try {
             await 
         }catch(err){
-            setErro('');
+            setEmailAddress('');
+            setEmailAddress('');
         }
     }
 
