@@ -20,6 +20,7 @@ export default function Login(){
         }catch(err){
             setEmailAddress('');
             setPassword('');
+            setError(err.message)
         }
     }
 
