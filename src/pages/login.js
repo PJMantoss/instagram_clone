@@ -16,7 +16,7 @@ export default function Login(){
         e.preventDefault();
 
         try {
-            await firebase.auth().signInWithEmailAndPassword();
+            await firebase.auth().signInWithEmailAndPassword(emailAddress, password);
         }catch(err){
             setEmailAddress('');
             setPassword('');
