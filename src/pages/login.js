@@ -39,7 +39,7 @@ export default function Login(){
                     <h1 className="flex justify-center w-full">
                         <img src="./images/logo.png" alt="instagram" className="mt-2 w-6/12 mb-4" />
                     </h1>
-                    {error && <p></p>}
+                    {error && <p>{error}</p>}
 
                     <form onSubmit={handleChange} method="POST">
                         <input 
