@@ -12,7 +12,9 @@ export default function Login(){
     const [error, setError] = useState('');
     const isInvalid = emailAddress === '' || password === '';
 
-    const handleChange = async (e) => {}
+    const handleChange = async (e) => {
+        e.preventDefault();
+    }
 
     useEffect(() => {
         document.title = 'Login - Instagram';
