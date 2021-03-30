@@ -11,6 +11,26 @@ export default function SignUp(){
                         <img src="./images/logo.png" alt="instagram" className="mt-2 w-6/12 mb-4" />
                     </h1>
                     {error && <p className="mb-4 text-xs text-red-500">{error}</p>}
+
+                    <form onSubmit={handleChange} method="POST">
+                        <input 
+                            aria-label="Enter your username" 
+                            className="text-sm text-gray w-full mr-3 py-5 px-4 h-2 border bg-gray-background rounded mb-2" 
+                            type="text"
+                            //value={emailAddress} 
+                            placeholder="Username"
+                            //onChange = {({ target }) => setEmailAddress(target.value)} 
+                        />
+
+                        <input 
+                            aria-label="Enter your email address" 
+                            className="text-sm w-full mr-3 py-5 px-4 h-2 border rounded mb-2" 
+                            type="text"
+                            value={emailAddress} 
+                            placeholder="Email address"
+                            onChange = {({ target }) => setEmailAddress(target.value)} 
+                        />
+                    </form>
                 </div>
             </div>
         </div>
