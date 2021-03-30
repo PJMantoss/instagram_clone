@@ -32,7 +32,7 @@ export default function SignUp(){
                         />
 
                         <input 
-                            aria-label="Enter your email" 
+                            aria-label="Enter your email address" 
                             className="text-sm text-gray w-full mr-3 py-5 px-4 h-2 border bg-gray-background rounded mb-2" 
                             type="text"
                             //value={emailAddress} 
@@ -43,7 +43,7 @@ export default function SignUp(){
                         <input 
                             aria-label="Enter your password" 
                             className="text-sm text-gray w-full mr-3 py-5 px-4 h-2 border bg-gray-background rounded mb-2" 
-                            type="text"
+                            type="password"
                             //value={emailAddress} 
                             placeholder="password"
                             //onChange = {({ target }) => setEmailAddress(target.value)} 
