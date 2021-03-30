@@ -4,6 +4,7 @@ import { Link, useHistory } from 'react-router-dom';
 import * as ROUTES from '../constants/routes';
 
 export default function Login(){
+    const history = useHistory();
     const { firebase } = useContext(FirebaseContext);
 
     const [emailAddress, setEmailAddress] = useState('');
