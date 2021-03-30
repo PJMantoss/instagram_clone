@@ -58,6 +58,15 @@ export default function SignUp(){
                         </button>
                     </form>
                 </div>
+
+                <div className="flex justify-center items-center flex-col w-full bg-white p-4 border">
+                    <p className="text-sm">
+                        Have an account? {' '}
+                        <Link to={ROUTES.SIGN_UP} className="font-bold">
+                            Sign In
+                        </Link>
+                    </p>
+                </div>
             </div>
         </div>
     )
