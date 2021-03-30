@@ -4,6 +4,6 @@ import * as ROUTES from '../constants/routes';
 
 export default function SignUp(){
     return(
-        <h1>Hello from SignUp!</h1>
+        <div className="container flex mx-auto max-w-screen-md items-center h-screen"></div>
     )
 }
