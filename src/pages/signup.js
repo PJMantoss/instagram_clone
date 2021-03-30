@@ -48,6 +48,13 @@ export default function SignUp(){
                             placeholder="password"
                             //onChange = {({ target }) => setEmailAddress(target.value)} 
                         />
+
+                        <button 
+                            type="submit" 
+                            className={`bg-blue-500 text-white w-full rounded h-8 font-bold`}
+                        >
+                            Sign Up
+                        </button>
                     </form>
                 </div>
             </div>
