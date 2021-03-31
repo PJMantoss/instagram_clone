@@ -35,7 +35,7 @@ export default function SignUp(){
                             type="text"
                             value={username} 
                             placeholder="Username"
-                            onChange = {({ target }) => setUsername(target.value)} 
+                            onChange = {({ target }) => setUsername(target.value.toLowerCase())} 
                         />
 
                         <input 
