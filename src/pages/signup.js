@@ -35,6 +35,10 @@ export default function SignUp(){
                         result.user
                         .updateProfile({
                             displayName: username,
+                            fullName: fullNAme,
+                            emailAddress: emailAddress,
+                            following: [],
+                            followers: []
                         }))
                       .then()
         }catch(err){}
