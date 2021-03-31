@@ -39,7 +39,7 @@ export default function SignUp(){
                             emailAddress: emailAddress,
                             following: [],
                             followers: [],
-                            dateCreated: 
+                            dateCreated: new Date();
                         }))
                       .then()
         }catch(err){}
