@@ -38,7 +38,8 @@ export default function SignUp(){
                             fullName: fullNAme,
                             emailAddress: emailAddress,
                             following: [],
-                            followers: []
+                            followers: [],
+                            dateCreated: 
                         }))
                       .then()
         }catch(err){}
