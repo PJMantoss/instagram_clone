@@ -58,7 +58,7 @@ export default function SignUp(){
                             type="password"
                             value={password} 
                             placeholder="password"
-                            //onChange = {({ target }) => setpassword(target.value)} 
+                            onChange = {({ target }) => setPassword(target.value)} 
                         />
 
                         <button 
