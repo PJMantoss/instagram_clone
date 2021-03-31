@@ -25,6 +25,9 @@ export default function SignUp(){
     //Event Handler
     const handleSignup = async (e) => {
         e.preventDefault();
+
+        //Call in firebase to handle registration/authentication
+        
     }
 
     return(
