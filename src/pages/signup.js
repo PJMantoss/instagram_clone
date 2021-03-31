@@ -7,7 +7,7 @@ export default function SignUp(){
     const { firebase } = useContext(FirebaseContext);
 
     const [username, setUsername] = useState('');
-    const [fullname, setFullname] = useState('');
+    const [fullName, setFullName] = useState('');
     const [emailAddress, setEmailAddress] = useState('');
     const [password, setPassword] = useState('');
 
@@ -39,7 +39,7 @@ export default function SignUp(){
                         />
 
                         <input 
-                            aria-label="Enter your full Name" 
+                            aria-label="Enter your Full Name" 
                             className="text-sm text-gray w-full mr-3 py-5 px-4 h-2 border bg-gray-background rounded mb-2" 
                             type="text"
                             value={fullname} 
