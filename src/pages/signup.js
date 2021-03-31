@@ -36,10 +36,10 @@ export default function SignUp(){
                 displayName: username
             });
 
-            await firebase.firestore().collection('user').add({
+            await firebase.firestore().collection('users').add({
                 userId: createdUserResult.user.uid,
                 username: username.toLowerCase(), fullName,
-                emailAddress: emailAddress,
+                emailAddress: emailAddress.toLowerCase(),
                 following: [],
                 followers: [],
                 dateCreated: Date.now()
