@@ -5,6 +5,8 @@ import * as ROUTES from '../constants/routes';
 
 export default function SignUp(){
     const [username, setUsername] = useState('');
+    const [fullname, setFullname] = useState('');
+    const [username, setUsername] = useState('');
     return(
         <div className="container flex mx-auto max-w-xs items-center h-screen">
             <div className="flex flex-col">
