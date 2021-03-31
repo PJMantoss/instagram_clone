@@ -46,7 +46,10 @@ export default function SignUp(){
                       .then(() => {
                           history.push(ROUTES.PROFILE)
                       })
-        }catch(err){}
+        }catch(err){
+            setUsername('');
+            setFullName('');
+        }
     }
 
     return(
