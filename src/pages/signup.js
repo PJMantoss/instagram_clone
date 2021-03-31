@@ -6,6 +6,7 @@ import * as ROUTES from '../constants/routes';
 export default function SignUp(){
     const { firebase } = useContext(FirebaseContext);
 
+    //initialize states
     const [username, setUsername] = useState('');
     const [fullName, setFullName] = useState('');
     const [emailAddress, setEmailAddress] = useState('');
@@ -13,11 +14,15 @@ export default function SignUp(){
 
     const [error, setError] = useState('');
 
+    //form validation
     const isInvalid = username === '' || fullName === '' || emailAddress === '' || password === '';
 
+    //set document title
     useEffect(() => {
         document.title = 'Sign Up - Instagram';
     }, []);
+
+    //
 
     return(
         <div className="container flex mx-auto max-w-xs items-center h-screen">
