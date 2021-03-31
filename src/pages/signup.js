@@ -4,11 +4,17 @@ import FirebaseContext from '../context/firebase';
 import * as ROUTES from '../constants/routes';
 
 export default function SignUp(){
+    const { firebase } = useContext(FirebaseContext);
+    
     const [username, setUsername] = useState('');
     const [fullname, setFullname] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    
+
+    const [error, setError] = useState('');
+
+    const isInvalid = email === '' || password === '';
+
     return(
         <div className="container flex mx-auto max-w-xs items-center h-screen">
             <div className="flex flex-col">
