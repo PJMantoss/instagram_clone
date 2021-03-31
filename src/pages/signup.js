@@ -40,16 +40,16 @@ export default function SignUp(){
                             type="text"
                             value={fullname} 
                             placeholder="Full Name"
-                            onChange = {({ target }) => setEmailAddress(target.value)} 
+                            onChange = {({ target }) => setFullname(target.value)} 
                         />
 
                         <input 
                             aria-label="Enter your email address" 
                             className="text-sm text-gray w-full mr-3 py-5 px-4 h-2 border bg-gray-background rounded mb-2" 
                             type="text"
-                            //value={emailAddress} 
+                            value={emailAddress} 
                             placeholder="Email"
-                            //onChange = {({ target }) => setEmailAddress(target.value)} 
+                            onChange = {({ target }) => setEmailAddress(target.value)} 
                         />
 
                         <input 
