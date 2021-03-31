@@ -45,15 +45,15 @@ export default function SignUp(){
                 dateCreated: Date.now()
             });
 
-            .then(result => 
-                        result.user
-                        .updateProfile({
-                            ,
+            // .then(result => 
+            //             result.user
+            //             .updateProfile({
+            //                 ,
                             
-                        }))
-                      .then(() => {
-                          history.push(ROUTES.PROFILE)
-                      })
+            //             }))
+            //           .then(() => {
+            //               history.push(ROUTES.PROFILE)
+            //           })
         }catch(err){
             setUsername('');
             setFullName('');
