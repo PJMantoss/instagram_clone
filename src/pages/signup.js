@@ -49,6 +49,8 @@ export default function SignUp(){
         }catch(err){
             setUsername('');
             setFullName('');
+            setEmailAddress('');
+            setPassword('');
         }
     }
 
