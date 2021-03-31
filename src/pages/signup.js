@@ -22,7 +22,8 @@ export default function SignUp(){
         document.title = 'Sign Up - Instagram';
     }, []);
 
-    //
+    //Event Handler
+    const handleSignup = async (e) => {}
 
     return(
         <div className="container flex mx-auto max-w-xs items-center h-screen">
