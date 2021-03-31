@@ -49,7 +49,7 @@ export default function SignUp(){
                             type="text"
                             value={emailAddress} 
                             placeholder="Email"
-                            onChange = {({ target }) => setEmailAddress(target.value)} 
+                            onChange = {({ target }) => setEmailAddress(target.value).toLowerCase()} 
                         />
 
                         <input 
