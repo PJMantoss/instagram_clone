@@ -16,7 +16,7 @@ export default function SignUp(){
     const isInvalid = email === '' || password === '';
 
     useEffect(() => {
-        document.title = 'Sign Up - Instagram'
+        document.title = 'Sign Up - Instagram';
     }, []);
 
     return(
