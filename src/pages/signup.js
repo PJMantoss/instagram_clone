@@ -32,11 +32,16 @@ export default function SignUp(){
         try{
             const createdUserResult = await firebase.auth().createUserWithEmailAndPassword(emailAddress, password);
                       
-            await createdUserResult.user.updateProfile({});
+            await createdUserResult.user.updateProfile({
+                displayName: username
+            });
+
+            await firebase.firestore().collection('user').add({});
+            
             .then(result => 
                         result.user
                         .updateProfile({
-                            displayName: username,
+                            ,
                             fullName: fullName,
                             emailAddress: emailAddress,
                             following: [],
