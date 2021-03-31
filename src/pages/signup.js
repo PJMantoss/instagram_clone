@@ -27,7 +27,7 @@ export default function SignUp(){
         e.preventDefault();
 
         //Call in firebase to handle registration/authentication
-        
+        try {}catch(err){}
     }
 
     return(
