@@ -31,7 +31,7 @@ export default function SignUp(){
                             type="text"
                             value={username} 
                             placeholder="Username"
-                            //onChange = {({ target }) => setEmailAddress(target.value)} 
+                            onChange = {({ target }) => setUsername(target.value)} 
                         />
 
                         <input 
