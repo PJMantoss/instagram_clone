@@ -62,7 +62,7 @@ export default function SignUp(){
                             type="password"
                             value={password} 
                             placeholder="password"
-                            onChange = {({ target }) => setPassword(target.value).toLowerCase()} 
+                            onChange = {({ target }) => setPassword(target.value.toLowerCase())} 
                         />
 
                         <button 
