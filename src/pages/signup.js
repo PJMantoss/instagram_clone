@@ -5,6 +5,7 @@ import * as ROUTES from '../constants/routes';
 import {useHistory} from 'react-router-dom';
 
 export default function SignUp(){
+    const history = useHistory('');
     const { firebase } = useContext(FirebaseContext);
 
     //initialize states
