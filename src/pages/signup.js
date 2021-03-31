@@ -31,6 +31,12 @@ export default function SignUp(){
             await firebase
                       .auth()
                       .createUserWithEmailAndPassword(emailAddress, password)
+                      .then(result => 
+                        result.user
+                        .updateProfile({
+                            displayName: username,
+                        }))
+                      .then()
         }catch(err){}
     }
 
