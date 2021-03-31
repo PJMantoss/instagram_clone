@@ -30,14 +30,14 @@ export default function SignUp(){
 
         //Call in firebase to handle registration/authentication
         try{
-            await firebase
-                      .auth()
-                      .createUserWithEmailAndPassword(emailAddress, password)
-                      .then(result => 
+            const createdUserResult = await firebase.auth().createUserWithEmailAndPassword(emailAddress, password);
+                      
+            await createdUserResult.user.updateProfile({});
+            .then(result => 
                         result.user
                         .updateProfile({
                             displayName: username,
-                            fullName: fullNAme,
+                            fullName: fullName,
                             emailAddress: emailAddress,
                             following: [],
                             followers: [],
