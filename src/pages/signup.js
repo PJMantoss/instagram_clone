@@ -56,9 +56,9 @@ export default function SignUp(){
                             aria-label="Enter your password" 
                             className="text-sm text-gray w-full mr-3 py-5 px-4 h-2 border bg-gray-background rounded mb-2" 
                             type="password"
-                            //value={emailAddress} 
+                            value={password} 
                             placeholder="password"
-                            //onChange = {({ target }) => setEmailAddress(target.value)} 
+                            //onChange = {({ target }) => setpassword(target.value)} 
                         />
 
                         <button 
