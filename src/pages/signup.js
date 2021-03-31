@@ -8,7 +8,7 @@ export default function SignUp(){
 
     const [username, setUsername] = useState('');
     const [fullname, setFullname] = useState('');
-    const [email, setEmail] = useState('');
+    const [emailAddress, setEmailAddress] = useState('');
     const [password, setPassword] = useState('');
 
     const [error, setError] = useState('');
