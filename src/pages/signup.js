@@ -36,17 +36,20 @@ export default function SignUp(){
                 displayName: username
             });
 
-            await firebase.firestore().collection('user').add({});
-            
+            await firebase.firestore().collection('user').add({
+                userId: createdUserResult.user.uid,
+                username: username.toLowerCase(), fullName,
+                emailAddress: emailAddress,
+                following: [],
+                followers: [],
+                dateCreated: Date.now()
+            });
+
             .then(result => 
                         result.user
                         .updateProfile({
                             ,
-                            fullName: fullName,
-                            emailAddress: emailAddress,
-                            following: [],
-                            followers: [],
-                            dateCreated: new Date()
+                            
                         }))
                       .then(() => {
                           history.push(ROUTES.PROFILE)
