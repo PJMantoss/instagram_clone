@@ -23,7 +23,9 @@ export default function SignUp(){
     }, []);
 
     //Event Handler
-    const handleSignup = async (e) => {}
+    const handleSignup = async (e) => {
+        e.preventDefault();
+    }
 
     return(
         <div className="container flex mx-auto max-w-xs items-center h-screen">
