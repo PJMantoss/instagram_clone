@@ -15,6 +15,8 @@ export default function SignUp(){
 
     const isInvalid = email === '' || password === '';
 
+    useEffect(() => {}, []);
+
     return(
         <div className="container flex mx-auto max-w-xs items-center h-screen">
             <div className="flex flex-col">
