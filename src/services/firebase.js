@@ -1,6 +1,6 @@
 import { firebase, FieldValue } from '../lib/firebase';
 
-export async function doesUserExist(username){
+export async function doesUsernameExist(username){
     const result = await firbase
          .firestore()
          .collection('users')
