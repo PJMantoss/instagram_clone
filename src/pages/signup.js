@@ -31,9 +31,8 @@ export default function SignUp(){
 
         const usernameExists = await doesUsernameExist(username);
 
-        if(!usernameExists.length){}else{}
-
-        //Call in firebase to handle registration/authentication
+        if(!usernameExists.length){
+            //Call in firebase to handle registration/authentication
         try{
             const createdUserResult = await firebase.auth().createUserWithEmailAndPassword(emailAddress, password);
                       
@@ -59,12 +58,16 @@ export default function SignUp(){
             //           .then(() => {
             //               history.push(ROUTES.PROFILE)
             //           })
-        }catch(err){
+        }catch(er
+            setFullName('');
+            setError(err.message);
+        }
+        }else{
             setUsername('');
             setFullName('');
             setEmailAddress('');
             setPassword('');
-            setError(err.message);
+            setError("That username is already taken, try another.");
         }
     }
 
