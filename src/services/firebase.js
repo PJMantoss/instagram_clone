@@ -5,4 +5,5 @@ export async function doesUserExist(username){
          .firestore()
          .collection('users')
          .where('username', '==', username)
+         .get();
 }
