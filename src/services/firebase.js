@@ -6,4 +6,6 @@ export async function doesUserExist(username){
          .collection('users')
          .where('username', '==', username)
          .get();
+
+         result.docs.map();
 }
