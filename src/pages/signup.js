@@ -29,6 +29,10 @@ export default function SignUp(){
     const handleSignup = async (e) => {
         e.preventDefault();
 
+        const usernameExists = await doesUsernameExist(username);
+
+        if(!usernameExists.length){}else{}
+
         //Call in firebase to handle registration/authentication
         try{
             const createdUserResult = await firebase.auth().createUserWithEmailAndPassword(emailAddress, password);
