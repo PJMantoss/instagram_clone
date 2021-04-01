@@ -4,5 +4,5 @@ export async function doesUserExist(username){
     const result = await firbase
          .firestore()
          .collection('users')
-         .where()
+         .where('username', '==', username)
 }
