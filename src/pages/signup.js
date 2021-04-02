@@ -48,7 +48,7 @@ export default function SignUp(){
                 followers: [],
                 dateCreated: Date.now()
             });
-            history.push(ROUTES.PROFILE);
+            history.push(ROUTES.DASHBOARD);
 
             // .then(result => 
             //             result.user
