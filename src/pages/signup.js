@@ -48,6 +48,7 @@ export default function SignUp(){
                 followers: [],
                 dateCreated: Date.now()
             });
+            history.push(ROUTES.PROFILE);
 
             // .then(result => 
             //             result.user
