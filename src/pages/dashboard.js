@@ -11,7 +11,7 @@ export default function Dashboard(){
     return(
         <div className="bg-gray-200">
             <Header />
-            <div>
+            <div className="grid grid-cols-3">
                 <Timeline />
                 <Sidebar />
             </div>
