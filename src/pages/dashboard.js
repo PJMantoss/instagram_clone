@@ -4,6 +4,7 @@ import Timeline from '../components/timeline';
 import Sidebar from '../components/sidebar';
 
 export default function Dashboard(){
+    useEffect(() => {}, []);
     return(
         <h1>Hello from Dashboard!</h1>
     )
