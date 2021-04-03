@@ -9,7 +9,7 @@ export default function Dashboard(){
     }, []);
 
     return(
-        <div class="bg-gray-200">
+        <div className="bg-gray-200">
             <Header />
             <div>
                 <Timeline />
