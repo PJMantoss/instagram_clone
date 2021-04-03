@@ -9,6 +9,9 @@ export default function Dashboard(){
     }, []);
 
     return(
-        <h1>Hello from Dashboard!</h1>
+        <div class="bg-gray-200">
+            <Header />
+            <div></div>
+        </div>
     )
 }
