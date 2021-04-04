@@ -4,7 +4,7 @@ export default function NotFound(){
     return(
         <div className="bg-gray">
             <div className="mx-auto max-w-screen-lg">
-                <p></p>
+                <p className="text-enter text-2xl"></p>
             </div>
         </div>
     )
