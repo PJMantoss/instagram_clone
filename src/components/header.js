@@ -2,5 +2,5 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Header(){
-    return(<p>I am the Header</p>)
+    return(<h1></h1>)
 }
