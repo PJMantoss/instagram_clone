@@ -5,7 +5,7 @@ import * as ROUTES from '../constants/routes';
 
 export default function Header(){
     const { firebase } = useContext(FirebaseContext);
-    const user = null;
+    const user = {};
     
     return(
         <header className="h-16 bg-white border-b mb-8">
@@ -22,6 +22,7 @@ export default function Header(){
                             {user ? (<p>Truthy</p>) : (<p>Falsy</p>)}
                         </h1>
                     </div>
+                    <div className="text-gray text-center flex items-center align-items"></div>
                 </div>
             </div>
         </header>
