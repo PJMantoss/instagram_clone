@@ -4,6 +4,8 @@ import FirebaseContext from '../context/firebase';
 import * as ROUTES from '../constants/routes';
 
 export default function Header(){
+    const { firebase } = useContext(FirebaseContext);
+    
     return(
         <header className="h-16 bg-white border-b mb-8">
             <div className="container mx-auto max-width-lg h-full">
