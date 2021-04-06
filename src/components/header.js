@@ -16,13 +16,11 @@ export default function Header(){
                             <Link to={ROUTES.DASHBOARD} ARIA-LABEL="Dashboard">
                                 <img src="images/logo.png" alt="Instagram" className="mt-2 w-6/12" />
                             </Link>
-        
-                            {user && (<p>Hello</p>)}
-        
-                            {user ? (<p>Truthy</p>) : (<p>Falsy</p>)}
                         </h1>
                     </div>
-                    <div className="text-gray text-center flex items-center align-items"></div>
+                    <div className="text-gray text-center flex items-center align-items">
+                        {user ? (<p>Truthy</p>) : (<p>Falsy</p>)}
+                    </div>
                 </div>
             </div>
         </header>
