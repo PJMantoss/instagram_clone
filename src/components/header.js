@@ -19,7 +19,7 @@ export default function Header(){
         
                             {user && (<p>Hello</p>)}
         
-                            {user ? () : ()}
+                            {user ? (<p>Truthy</p>) : (<p>Falsy</p>)}
                         </h1>
                     </div>
                 </div>
