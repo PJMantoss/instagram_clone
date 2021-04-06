@@ -22,7 +22,11 @@ export default function Header(){
                         {user ? (
                              <></>
                         ) : (
-                            <></>
+                            <>
+                                <Link to={ROUTES.LOGIN}>
+                                    <Button></Button>
+                                </Link>
+                            </>
                           )}
                     </div>
                 </div>
