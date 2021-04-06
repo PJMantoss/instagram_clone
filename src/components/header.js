@@ -5,7 +5,9 @@ import * as ROUTES from '../constants/routes';
 
 export default function Header(){
     const { firebase } = useContext(FirebaseContext);
-    const user = {};
+    const user = {
+        displayName: 'PJ'
+    };
     
     return(
         <header className="h-16 bg-white border-b mb-8">
@@ -24,37 +26,40 @@ export default function Header(){
                                  <Link to={ROUTES.DASHBOARD} aria-label="home">
                                     <p>Dashboard</p>
                                 </Link>
-                                <Button 
-                                        type="button" 
-                                        title="Sign Out"
-                                        className="bg-blue font-bold text-sm rounded text-white w-20 h-8"
-                                        onClick={() => firebase.auth().signOut()}
-                                        onKeyDown={(e) => {
-                                                  if(e.key === 'Enter'){
-                                                  firebase.auth().signOut();
-                                                  }
-                                        }}
-                                    >
+                                <button 
+                                    type="button" 
+                                    title="Sign Out"
+                                    className="bg-blue font-bold text-sm rounded text-white w-20 h-8"
+                                    onClick={() => firebase.auth().signOut()}
+                                    onKeyDown={(e) => {
+                                              if(e.key === 'Enter'){
+                                              firebase.auth().signOut();
+                                              }
+                                    }}
+                                >
                                     Sign Out
-                                    </Button>
+                                </button>
+                                <div>
+                                        <Link></Link>
+                                </div>
                              </>
                         ) : (
                             <>
                                 <Link to={ROUTES.LOGIN}>
-                                    <Button 
+                                    <button 
                                         type="button" 
                                         className="bg-blue font-bold text-sm rounded text-white w-20 h-8"
                                     >
                                     Log In
-                                    </Button>
+                                    </button>
                                 </Link>
                                 <Link to={ROUTES.SIGN_UP}>
-                                    <Button 
+                                    <button 
                                         type="button" 
                                         className="font-bold text-sm rounded text-blue w-20 h-8"
                                     >
                                     Sign Up
-                                    </Button>
+                                    </button>
                                 </Link>
                             </>
                           )}
