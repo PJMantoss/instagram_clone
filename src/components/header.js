@@ -24,7 +24,12 @@ export default function Header(){
                         ) : (
                             <>
                                 <Link to={ROUTES.LOGIN}>
-                                    <Button></Button>
+                                    <Button 
+                                        type="" 
+                                        className=""
+                                    >
+                                    
+                                    </Button>
                                 </Link>
                             </>
                           )}
