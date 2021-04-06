@@ -9,7 +9,11 @@ export default function Header(){
             <div className="container mx-auto max-width-lg h-full">
                 <div className="flex justify-between h-full">
                     <div className="text-gray-700 text-center flex items-center align-items cursor-pointer">
-                        <h1>Istagram</h1>
+                        <h1>
+                            <Link>
+                                <img src="" alt="" className="" />
+                            </Link>
+                        </h1>
                     </div>
                 </div>
             </div>
