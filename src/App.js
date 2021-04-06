@@ -1,5 +1,7 @@
 import React, {lazy, Suspense} from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import UserContext from './context/user';
 import * as ROUTES from './constants/routes';
 import './App.css';
 
@@ -11,6 +13,7 @@ const NotFound = lazy(() => import('./pages/not-found'));
 
 function App() {
   return (
+      <UserContext.Provider>
       <Router>
         <Suspense fallback={<p>loading...</p>}>
           <Switch>
@@ -22,6 +25,7 @@ function App() {
           </Switch>
         </Suspense>
       </Router>
+      </UserContext.Provider>
   );
 }
 
