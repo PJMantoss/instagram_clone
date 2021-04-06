@@ -10,7 +10,7 @@ export default function Header(){
                 <div className="flex justify-between h-full">
                     <div className="text-gray-700 text-center flex items-center align-items cursor-pointer">
                         <h1>
-                            <Link>
+                            <Link to={ROUTES.DASHBOARD} ARIA-LABEL="Dashboard">
                                 <img src="" alt="" className="" />
                             </Link>
                         </h1>
