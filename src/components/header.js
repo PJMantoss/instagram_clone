@@ -39,7 +39,7 @@ export default function Header(){
                                 >
                                     Sign Out
                                 </button>
-                                <div>
+                                <div className="flex items-center cursor-center">
                                         <Link></Link>
                                 </div>
                              </>
