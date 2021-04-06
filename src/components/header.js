@@ -31,7 +31,7 @@ export default function Header(){
                                     Log In
                                     </Button>
                                 </Link>
-                                <Link to={ROUTES.LOGIN}>
+                                <Link to={ROUTES.SIGNUP}>
                                     <Button 
                                         type="button" 
                                         className="font-bold text-sm rounded text-blue w-20 h-8"
