@@ -20,7 +20,20 @@ export default function Header(){
                     </div>
                     <div className="text-gray text-center flex items-center align-items">
                         {user ? (
-                             <></>
+                             <>
+                                 <Link to={ROUTES.DASHBOARD} aria-label="home">
+                                    <p>Dashboard</p>
+                                </Link>
+                                <Button 
+                                        type="button" 
+                                        title=""
+                                        className="bg-blue font-bold text-sm rounded text-white w-20 h-8"
+                                        onClick=""
+                                        onKeyDown={}
+                                    >
+                                    Sign Out
+                                    </Button>
+                             </>
                         ) : (
                             <>
                                 <Link to={ROUTES.LOGIN}>
@@ -31,7 +44,7 @@ export default function Header(){
                                     Log In
                                     </Button>
                                 </Link>
-                                <Link to={ROUTES.SIGNUP}>
+                                <Link to={ROUTES.SIGN_UP}>
                                     <Button 
                                         type="button" 
                                         className="font-bold text-sm rounded text-blue w-20 h-8"
