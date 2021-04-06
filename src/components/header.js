@@ -16,6 +16,8 @@ export default function Header(){
                             <Link to={ROUTES.DASHBOARD} ARIA-LABEL="Dashboard">
                                 <img src="images/logo.png" alt="Instagram" className="mt-2 w-6/12" />
                             </Link>
+        
+                            {user && (<p>Hello</p>)}
                         </h1>
                     </div>
                 </div>
