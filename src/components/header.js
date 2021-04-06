@@ -11,7 +11,7 @@ export default function Header(){
                     <div className="text-gray-700 text-center flex items-center align-items cursor-pointer">
                         <h1>
                             <Link to={ROUTES.DASHBOARD} ARIA-LABEL="Dashboard">
-                                <img src="" alt="" className="" />
+                                <img src="images/logo.png" alt="Instagram" className="mt-2 w-6/12" />
                             </Link>
                         </h1>
                     </div>
