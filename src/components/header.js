@@ -19,7 +19,11 @@ export default function Header(){
                         </h1>
                     </div>
                     <div className="text-gray text-center flex items-center align-items">
-                        {user ? (<p>Truthy</p>) : (<p>Falsy</p>)}
+                        {user ? (
+                             <></>
+                        ) : (
+                            <></>
+                          )}
                     </div>
                 </div>
             </div>
