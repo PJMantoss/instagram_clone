@@ -29,7 +29,11 @@ export default function Header(){
                                         title="Sign Out"
                                         className="bg-blue font-bold text-sm rounded text-white w-20 h-8"
                                         onClick={() => firebase.auth().signOut()}
-                                        onKeyDown={}
+                                        onKeyDown={(e) => {
+                                                  if(e.key === 'Enter'){
+                                                  firebase.auth().signOut();
+                                                  }
+                                        }}
                                     >
                                     Sign Out
                                     </Button>
