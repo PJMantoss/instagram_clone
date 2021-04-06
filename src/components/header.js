@@ -18,6 +18,8 @@ export default function Header(){
                             </Link>
         
                             {user && (<p>Hello</p>)}
+        
+                            {user ? () : ()}
                         </h1>
                     </div>
                 </div>
