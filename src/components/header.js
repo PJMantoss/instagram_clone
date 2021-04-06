@@ -26,9 +26,9 @@ export default function Header(){
                                 </Link>
                                 <Button 
                                         type="button" 
-                                        title=""
+                                        title="Sign Out"
                                         className="bg-blue font-bold text-sm rounded text-white w-20 h-8"
-                                        onClick=""
+                                        onClick={() => firebase.auth().signOut()}
                                         onKeyDown={}
                                     >
                                     Sign Out
