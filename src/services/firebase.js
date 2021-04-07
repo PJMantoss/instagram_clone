@@ -10,4 +10,12 @@ export async function doesUsernameExist(username){
         return  result.docs.map((user) => user.data().length > 0);
 }
 
-export async function getUserByUserId(){};
+export async function getUserByUserId(userId){
+    const result = await firbase
+         .firestore()
+         .collection('users')
+         .where('userId', '==', userId)
+         .get();
+    
+    return result;
+};
