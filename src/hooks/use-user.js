@@ -7,7 +7,10 @@ export default function useUser(){
   const { user } = useContext(UserContext);
   
   useEffect(() => {
-    async function getUserObjByUserId(){}
+    async function getUserObjByUserId(){
+      //query for the user data in the firestore
+      const [response] = await getUserByUserId(user.uid); 
+    }
     
     if(user && user.id){
       getUserObjByUserId();
