@@ -16,6 +16,10 @@ export async function getUserByUserId(userId){
          .collection('users')
          .where('userId', '==', userId)
          .get();
+    const user = result.docs.map(() => ({
+        ...item.data(),
+        docId: item.Id
+    }));
     
-    return result;
+    return user;
 };
