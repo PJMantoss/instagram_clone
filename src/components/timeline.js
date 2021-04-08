@@ -11,9 +11,10 @@ export default function Timeline(){
         <div className="container col-span-2">
             {!photos ? (
                 <>
-                    {[...new, Array(4)].map(_, index) => ()}
+                    {[...new, Array(4)].map((_, index) => (
+                          <Skeleton count={4} width={640} height={500} className="mb-5" />
+                    ))}
                 </>
-                <Skeleton count={4} width={640} height={500} className="mb-5" />
              ) : (
                  photos.map(photo => 'I will be a photo')
             )};
