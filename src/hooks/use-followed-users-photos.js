@@ -10,7 +10,9 @@ export default function useFollowedUsersPhotos(){
   
   useEffect(() => {
     async function getTimelinePhotos(){};
-  }, []);
+    
+    getTimelinePhotos();
+  }, [userId]);
   
   return(<div></div>)
 };
