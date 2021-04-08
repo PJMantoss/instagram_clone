@@ -45,6 +45,10 @@ export default function getUserFollowedPhotos(userId, followingUserIds){
             }
             
             const user = await getUserByUserId(photo.userId);
+            const username = user[0].username;
+            return { username, ...photo, userLikedPhoto };
         })
     );
+    
+    return photosWithUserDetails;
 }
