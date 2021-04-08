@@ -24,3 +24,18 @@ export async function getUserByUserId(userId){
     
     return user;
 };
+
+export default function getUserFollowedPhotos(){
+    const result = await firbase
+         .firestore()
+         .collection('users')
+         .where('userId', '==', userId)
+         .get();
+    
+    const user = result.docs.map(() => ({
+        ...item.data(),
+        docId: item.Id
+    }));
+    
+    return user;
+}
