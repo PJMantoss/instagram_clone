@@ -29,10 +29,10 @@ export default function getUserFollowedPhotos(userId, followingUserIds){
     const result = await firbase
          .firestore()
          .collection('photos')
-         .where('followingUserIds')
+         .where('userId', 'in', followingUserIds)
          .get();
     
-    const photos = result.docs.map(() => ({
+    const userFollowedPhotos = result.docs.map(() => ({
         ...item.data(),
         docId: item.Id
     }));
