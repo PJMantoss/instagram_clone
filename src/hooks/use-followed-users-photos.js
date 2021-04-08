@@ -8,7 +8,10 @@ export default function useFollowedUsersPhotos(){
   
   useEffect(() => {
     async function getTimelinePhotos(){
+      //get the followingUserIds (getUserByUserId)
       const followingUserIds = await getUserByUserId(userId);
+      // assign a let variable to followedUserPhotos = []
+      let followedUserPhotos = [];
       
       if(followingUserIds && followingUserIds[0].following.length > 0){
         const followedUserPhotos = await getUserFollowedPhotos(userId, followingUserIds[0].following);
