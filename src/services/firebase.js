@@ -37,5 +37,5 @@ export default function getUserFollowedPhotos(userId, followingUserIds){
         docId: item.Id
     }));
     
-    return userFollowedPhotos;
+    const photosWithUserDetails = await Promise.all();
 }
