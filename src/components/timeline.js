@@ -1,5 +1,6 @@
 import React from 'react';
 import Skeleton from 'react-loading-skeleton';
+import useFollowedUsersPhotos from '../hooks/use-followed-users-photos.js';
 
 // References
 //   - https://www.npmjs.com/package/react-loading-skeleton
