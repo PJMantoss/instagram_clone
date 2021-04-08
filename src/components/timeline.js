@@ -17,7 +17,9 @@ export default function Timeline(){
                 </>
              ) : photos && photos.length > 0 ? (
                  photos.map(photo => 'I will be a photo')
-             ) : ()
+             ) : (
+                 <p>Follow people to see photos</p>
+             )
             )};
         </div>
     )
