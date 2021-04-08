@@ -6,7 +6,7 @@ import useFollowedUsersPhotos from '../hooks/use-followed-users-photos.js';
 //   - https://www.npmjs.com/package/react-loading-skeleton
 
 export default function Timeline(){
-    const photos = null;
+    const { photos } = useFollowedUsersPhotos();
     
     return(
         <div className="container col-span-2">
