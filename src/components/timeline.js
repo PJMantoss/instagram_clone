@@ -7,7 +7,7 @@ import Skeleton from 'react-loading-skeleton';
 export default function Timeline(){
     return(
         <div className="container col-span-2">
-            <p>I am the Timeline</p>
+            {!photos ? <Skeleton count={4} width={640} height={5} /> : photos.map(photo => 'I will be a photo')}
         </div>
     )
 }
