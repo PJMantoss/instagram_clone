@@ -15,8 +15,9 @@ export default function Timeline(){
                           <Skeleton key={index} count={1} width={640} height={500} className="mb-5" />
                     ))}
                 </>
-             ) : (
+             ) : photos && photos.length > 0 ? (
                  photos.map(photo => 'I will be a photo')
+             ) : ()
             )};
         </div>
     )
