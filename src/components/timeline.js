@@ -19,8 +19,7 @@ export default function Timeline(){
                  photos.map(photo => 'I will be a photo')
              ) : (
                  <p className="text-center text-2xl">Follow people to see photos</p>
-             )
-            )};
+             )};
         </div>
     )
 }
