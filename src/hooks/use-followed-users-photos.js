@@ -14,8 +14,8 @@ export default function useFollowedUsersPhotos(){
       const followingUserIds = await getUserByUserId(userId);
       
       if(followingUserIds && followingUserIds[0].following.length > 0){
-        let followedUserPhotos = [];
-        //call a function that will get photos
+        const followedUserPhotos = await getUserFollowedPhotos(userId, followingUserIds[0].following);
+        
         followedUserPhotos.sort((a,b) => b.dateCreated - a.dateCreated);
         setPhotos(followedUserPhotos);
       };
