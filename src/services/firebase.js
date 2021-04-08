@@ -37,5 +37,5 @@ export default function getUserFollowedPhotos(userId, followingUserIds){
         docId: item.Id
     }));
     
-    return photos;
+    return userFollowedPhotos;
 }
