@@ -43,6 +43,8 @@ export default function getUserFollowedPhotos(userId, followingUserIds){
             if(photo.likes.includes(userId)){
                 userLikePhoto = true;
             }
+            
+            const user = await getUserByUserId(photo.userId);
         })
     );
 }
