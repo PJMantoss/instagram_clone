@@ -25,17 +25,17 @@ export async function getUserByUserId(userId){
     return user;
 };
 
-export default function getUserFollowedPhotos(){
+export default function getUserFollowedPhotos(userId, followingUserIds){
     const result = await firbase
          .firestore()
-         .collection('users')
-         .where('userId', '==', userId)
+         .collection('photos')
+         .where('followingUserIds')
          .get();
     
-    const user = result.docs.map(() => ({
+    const photos = result.docs.map(() => ({
         ...item.data(),
         docId: item.Id
     }));
     
-    return user;
+    return photos;
 }
