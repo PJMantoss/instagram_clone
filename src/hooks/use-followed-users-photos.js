@@ -13,7 +13,10 @@ export default function useFollowedUsersPhotos(){
     async function getTimelinePhotos(){
       const followingUserIds = await getUserByUserId(userId);
       
-      if(){};
+      if(followingUserIds && followingUserIds[0].following.length > 0){
+        let followedUserPhotos = [];
+        //call a function that will get photos
+      };
     };
     
     getTimelinePhotos();
