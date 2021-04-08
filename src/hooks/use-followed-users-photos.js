@@ -14,6 +14,8 @@ export default function useFollowedUsersPhotos(){
       let followedUserPhotos = [];
       
       if(followingUserIds && followingUserIds[0].following.length > 0){
+        //call a function that will get us the photos
+        //re-arrange the array so that we have the newest photos first! (use the property .dateCreated)
         const followedUserPhotos = await getUserFollowedPhotos(userId, followingUserIds[0].following);
         
         followedUserPhotos.sort((a,b) => b.dateCreated - a.dateCreated);
