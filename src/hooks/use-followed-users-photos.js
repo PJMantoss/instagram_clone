@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import UserContext from '../context/user';
 
 export default function useFollowedUsersPhotos(){
-  const { user } = useContext(UserContext);
+  const { user: {uid: userId = ""} } = useContext(UserContext);
   const [photos, setPhotos] = useState(null);
   
   const userId = user.uid;
