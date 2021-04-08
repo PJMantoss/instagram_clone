@@ -3,7 +3,7 @@ import UserContext from '../context/user';
 
 export default function useFollowedUsersPhotos(){
   const { user } = useContext(UserContext);
-  const [photos, setPhotos] = useState();
+  const [photos, setPhotos] = useState(null);
   
   const userId = user.uid;
   userId = '';
