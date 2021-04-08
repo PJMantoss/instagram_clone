@@ -40,6 +40,9 @@ export default function getUserFollowedPhotos(userId, followingUserIds){
     const photosWithUserDetails = await Promise.all(
         userFollowedPhotos.map(async (photo) => {
             let userLikePhoto = false;
+            if(photo.likes.includes(userId)){
+                userLikePhoto = true;
+            }
         })
     );
 }
