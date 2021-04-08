@@ -13,7 +13,7 @@ export default function Timeline(){
             {!photos ? (
                 <Skeleton count={4} width={640} height={500} className="mb-5" />
              ) : (
-                 photos.map(content => <p className="text-center text-2xl">{content.username}</p>)
+                 photos.map(content => <p key={content.docId}>{content.username}</p>)
              )};
         </div>
     )
