@@ -7,6 +7,6 @@ import Footer from './footer.js';
 
 export default function Post({ content }){
   return(
-    <div className="bg-white rounded mb-16"></div>
+    <div className="bg-white border-gray-50 rounded col-span-4 mb-16"></div>
   );
 }
