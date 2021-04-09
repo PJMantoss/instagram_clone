@@ -6,5 +6,7 @@ import Header from './header.js';
 import Footer from './footer.js';
 
 export default function Post({ content }){
-  return(<h1>Post</h1>);
+  return(
+    <div className="bg-white rounded mb-16"></div>
+  );
 }
