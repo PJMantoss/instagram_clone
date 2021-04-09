@@ -5,6 +5,6 @@ import Image from './image.js';
 import Header from './header.js';
 import Footer from './footer.js';
 
-export default function Post(){
+export default function Post({ content }){
   return(<h1>Post</h1>);
 }
