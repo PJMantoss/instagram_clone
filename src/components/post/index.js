@@ -8,7 +8,7 @@ import Footer from './footer.js';
 export default function Post({ content }){
   return(
     <div className="bg-white border rounded col-span-4 mb-16">
-        <Image src={content.src} alt={content.caption} />
+        <Image src={content.imageSrc} caption={content.caption} />
     </div>
   );
 }
