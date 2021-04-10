@@ -10,8 +10,8 @@ export default function Post({ content }){
     <div className="bg-white border rounded col-span-4 mb-16">
         <Image src={content.imageSrc} caption={content.caption} />
         <Actions 
-            docId={}
-            totalLikes={}
+            docId={content.docId}
+            totalLikes={content.likes.length}
             likedPhoto={}
             handleFocus={}
         />
