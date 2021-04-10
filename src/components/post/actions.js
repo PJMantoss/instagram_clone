@@ -3,6 +3,8 @@ import FirebaseContext from '../../context/firebase';
 import UserContext from '../../context/user';
 
 export default function Actions({ docId, totalLikes, likedPhoto, handleFocus }){
+  const { user : { uid: userId = '' } } = useContext(UserContext);
+  
   const [toggleLiked, setToggledLiked] = useState(likedPhoto);
   const [likes, setLikes] = useState(totalLikes);
   const { firebase, fieldValue } = useContext(FirebaseContext);
