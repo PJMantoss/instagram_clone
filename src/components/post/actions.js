@@ -38,6 +38,9 @@ export default function Actions({ docId, totalLikes, likedPhoto, handleFocus }){
                 </svg>
             </div>
         </div>
+        <div className="p-4 py-0">
+            <p className="font-bold">{}</p>
+        </div>
     </>
   );
 };
