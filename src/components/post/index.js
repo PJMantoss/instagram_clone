@@ -6,6 +6,8 @@ import Header from './header.js';
 import Footer from './footer.js';
 
 export default function Post({ content }){
+  const commentInput = useRef(null);
+  
   return(
     <div className="bg-white border rounded col-span-4 mb-16">
         <Image src={content.imageSrc} caption={content.caption} />
