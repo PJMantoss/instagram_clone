@@ -3,11 +3,15 @@ import FirebaseContext from '../../context/firebase';
 import UserContext from '../../context/user';
 
 export default function Actions({ docId, totalLikes, likedPhoto, handleFocus }){
-  const [toggledLike, setToggledLiked] = useState(likedPhoto);
+  const [toggledLiked, setToggledLiked] = useState(likedPhoto);
   const [likes, setLikes] = useState(totalLikes);
   const { firebase, fieldValue } = useContext(FirebaseContext);
   
-  const handleToggleLiked = async () => {}
+  const handleToggleLiked = async () => {
+    setToggledLiked((toggledLiked) => !toggledLiked)
+    
+    await firebase.
+  }
   
   return(
     <>
