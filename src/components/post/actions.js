@@ -4,7 +4,7 @@ import UserContext from '../../context/user';
 
 export default function Actions({ docId, totalLikes, likedPhoto, handleFocus }){
   const [toggledLike, setToggledLiked] = useState(likedPhoto);
-  const [] = useState();
+  const [likes, setLikes] = useState(totalLikes);
   
   return(
     <>
