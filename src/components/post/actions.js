@@ -10,7 +10,11 @@ export default function Actions({ docId, totalLikes, likedPhoto, handleFocus }){
   const handleToggleLiked = async () => {
     setToggledLiked((toggledLiked) => !toggledLiked)
     
-    await firebase.
+    await firebase
+          .firestore()
+          .collection('photos')
+          .docId()
+          .update()
   }
   
   return(
