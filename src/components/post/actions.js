@@ -17,6 +17,8 @@ export default function Actions({ docId, totalLikes, likedPhoto, handleFocus }){
           .update({
                likes: toggleLiked ? Fieldvalue.arrayRemove(userId) : FieldValue.arrayUnion(userId)
            });
+    
+    setLikes((likes) => toggleLiked ? likes - 1 : likes + 1);
   }
   
   return(
