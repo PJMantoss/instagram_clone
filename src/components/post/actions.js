@@ -13,7 +13,22 @@ export default function Actions({ docId, totalLikes, likedPhoto, handleFocus }){
     <>
         <div className="flex justify-between p4-">
             <div className="flex">
-                <svg>
+                <svg
+                    onClick={() => handleToggleLiked((toggleLiked) => !toggleLiked)}
+                    onKeyDown={(e) => {
+                        if (e.key === 'Enter') {
+                            handleToggleLiked((toggleLiked) => !toggleLiked);
+                        }
+                    }}
+                    className={`w-8 mr-4 select-none cursor-pointer ${
+                        toggleLiked ? 'fill-red text-red-primary' : 'text-black-light'
+                    }`}
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    tabIndex={0}
+                >
                     <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
