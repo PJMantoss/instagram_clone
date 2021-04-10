@@ -3,18 +3,20 @@ import FirebaseContext from '../../context/firebase';
 import UserContext from '../../context/user';
 
 export default function Actions({ docId, totalLikes, likedPhoto, handleFocus }){
-  const [toggledLiked, setToggledLiked] = useState(likedPhoto);
+  const [toggleLiked, setToggledLiked] = useState(likedPhoto);
   const [likes, setLikes] = useState(totalLikes);
   const { firebase, fieldValue } = useContext(FirebaseContext);
   
   const handleToggleLiked = async () => {
-    setToggledLiked((toggledLiked) => !toggledLiked)
+    setToggledLiked((toggleLiked) => !toggleLiked)
     
     await firebase
           .firestore()
           .collection('photos')
           .docId(docId)
-          .update({})
+          .update({
+               likes: toggleLiked ? fieldvalue.ArrayRemove() : fieldValue.ArrayUnion()
+           });
   }
   
   return(
