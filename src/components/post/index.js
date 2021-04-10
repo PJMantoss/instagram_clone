@@ -7,6 +7,7 @@ import Footer from './footer.js';
 
 export default function Post({ content }){
   const commentInput = useRef(null);
+  const handleFocus = () => commentInput.current.focus();
   
   return(
     <div className="bg-white border rounded col-span-4 mb-16">
