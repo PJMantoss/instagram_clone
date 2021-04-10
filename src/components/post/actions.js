@@ -12,7 +12,9 @@ export default function Actions({ docId, totalLikes, likedPhoto, handleFocus }){
   return(
     <>
         <div className="flex justify-between p4-">
-            <div className=""></div>
+            <div className="flex">
+                <svg></svg>
+            </div>
         </div>
     </>
   );
