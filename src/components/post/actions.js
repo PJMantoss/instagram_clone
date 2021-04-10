@@ -7,7 +7,7 @@ export default function Actions({ docId, totalLikes, likedPhoto, handleFocus }){
   const [likes, setLikes] = useState(totalLikes);
   const { firebase, fieldValue } = useContext(FirebaseContext);
   
-  const handleToggleLike = async () => {}
+  const handleToggleLiked = async () => {}
   
   return(
     <>
@@ -21,7 +21,7 @@ export default function Actions({ docId, totalLikes, likedPhoto, handleFocus }){
                         }
                     }}
                     className={`w-8 mr-4 select-none cursor-pointer ${
-                        toggleLiked ? 'fill-red text-red-primary' : 'text-black-light'
+                        toggleLiked ? 'fill-red text-red' : 'text-black'
                     }`}
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
