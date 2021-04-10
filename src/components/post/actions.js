@@ -13,8 +13,8 @@ export default function Actions({ docId, totalLikes, likedPhoto, handleFocus }){
     await firebase
           .firestore()
           .collection('photos')
-          .docId()
-          .update()
+          .docId(docId)
+          .update({})
   }
   
   return(
