@@ -7,6 +7,8 @@ export default function Actions({ docId, totalLikes, likedPhoto, handleFocus }){
   const [likes, setLikes] = useState(totalLikes);
   const { firebase, fieldValue } = useContext(FirebaseContext);
   
+  const handleToggleLike = async () => {}
+  
   return(
     <>
         <div className="flex justify-between p4-">
