@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Actions from '/actions.js';
 import AddComments from './add-comments.js';
 import Image from './image.js';
