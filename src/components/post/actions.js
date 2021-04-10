@@ -4,6 +4,10 @@ import UserContext from '../../user';
 
 export default function Actions({ docId, totalLikes, likedPhoto, handleFocus }){
   return(
-    <div></div>
+    <>
+        <div className="">
+            <div className=""></div>
+        </div>
+    </>
   );
 };
