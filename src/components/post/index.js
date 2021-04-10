@@ -11,6 +11,7 @@ export default function Post({ content }){
   
   return(
     <div className="bg-white border rounded col-span-4 mb-16">
+        <Header username={content.username} />
         <Image src={content.imageSrc} caption={content.caption} />
         <Actions 
             docId={content.docId}
