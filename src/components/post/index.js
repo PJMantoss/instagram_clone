@@ -9,7 +9,12 @@ export default function Post({ content }){
   return(
     <div className="bg-white border rounded col-span-4 mb-16">
         <Image src={content.imageSrc} caption={content.caption} />
-        <Actions />
+        <Actions 
+            docId={}
+            totalLikes={}
+            likedPhoto={}
+            handleFocus={}
+        />
         <Footer username={content.username} caption={content.caption} />
     </div>
   );
