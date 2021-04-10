@@ -3,6 +3,9 @@ import FirebaseContext from '../../context/firebase';
 import UserContext from '../../context/user';
 
 export default function Actions({ docId, totalLikes, likedPhoto, handleFocus }){
+  const [toggledLike, setToggledLiked] = useState(likedPhoto);
+  const [] = useState();
+  
   return(
     <>
         <div className="flex justify-between p4-">
