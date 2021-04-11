@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import Actions from '/actions.js';
-import AddComments from './add-comments.js';
+import Comments from './add-comments.js';
 import Image from './image.js';
 import Header from './header.js';
 import Footer from './footer.js';
@@ -20,6 +20,7 @@ export default function Post({ content }){
             handleFocus={handleFocus}
         />
         <Footer username={content.username} caption={content.caption} />
+        <Comments />
     </div>
   );
 }
