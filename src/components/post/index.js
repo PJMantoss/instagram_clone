@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import Actions from '/actions.js';
-import Comments from './add-comments.js';
+import Comments from './comments.js';
 import Image from './image.js';
 import Header from './header.js';
 import Footer from './footer.js';
