@@ -27,8 +27,8 @@ export default function Comments({ docId, comments: allComments, posted, comment
             </p>
         </div>
         <AddComment
-            docId={}
-            comments={}
+            docId={docId}
+            comments={comments}
             setComments={}
             commentInput={}
         />
