@@ -13,7 +13,7 @@ export default function Comments({ docId, comments: allComments, posted, comment
           </p>
         )}
         {comments.slice(0, 3).map(item => (
-          <p key={} className={}>
+          <p key={`${item.comment}-${item.displayName}`} className="mb-1">
               <Link to{}></Link>
           <p>
         ))}
