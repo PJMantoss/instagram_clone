@@ -6,6 +6,8 @@ export default function AddComments({ docId, comments, setComments, commentInput
   const { firebase, fieldValue } = useContext(FirebaseContext);
   const [ comments, setComments ] = useState('');
   
+  const { user: {displayName} } = useContext(UserContext);
+  
   return(
     <div></div>
   )
