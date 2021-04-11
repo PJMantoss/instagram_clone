@@ -24,6 +24,6 @@ export default function AddComments({ docId, comments, setComments, commentInput
   }
   
   return(
-    <div className=""></div>
+    <div className="border-t border-gray-500"></div>
   )
 }
