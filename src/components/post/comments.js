@@ -21,6 +21,9 @@ export default function Comments({ docId, comments: allComments, posted, comment
               <span className="">{item.comment}</span>
           <p>
         ))}
+        <p className="text-gray uppercase text-xs mt-2">
+           {}
+        </p>
     </div>
   )
 };
