@@ -21,10 +21,10 @@ export default function Post({ content }){
         />
         <Footer username={content.username} caption={content.caption} />
         <Comments
-            docId={}
-            comments={}
-            posted={}
-            commentInput={}
+            docId={content.docId}
+            comments={content.comments}
+            posted={content.dateCreated}
+            commentInput={commentInput}
         />
     </div>
   );
