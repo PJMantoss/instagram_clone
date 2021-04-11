@@ -12,6 +12,11 @@ export default function Comments({ docId, comments: allComments, posted, comment
               View all {comments.length} comments
           </p>
         )}
+        {comments.slice(0, 3).map(item => (
+          <p key={} className={}>
+              <Link to{}></Link>
+          <p>
+        ))}
     </div>
   )
 };
