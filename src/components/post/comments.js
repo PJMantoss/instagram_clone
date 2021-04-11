@@ -6,6 +6,8 @@ export default function Comments({ docId, comments: allComments, posted, comment
   const [comments, setComments] = useState(allComments);
   
   return(
-    <div></div>
+    <div className="p-4 pt-1 pb-4">
+        {}
+    </div>
   )
 };
