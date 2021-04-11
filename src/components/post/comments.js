@@ -30,7 +30,7 @@ export default function Comments({ docId, comments: allComments, posted, comment
             docId={docId}
             comments={comments}
             setComments={setComments}
-            commentInput={}
+            commentInput={commentInput}
         />
     <>
   )
