@@ -19,7 +19,7 @@ export default function AddComments({ docId, comments, setComments, commentInput
            .collection('photos')
            .doc(docId)
            .update({
-                comments: {}
+                comments: fieldValue.arrayUnion({ displayName, comment })
             })
   }
   
