@@ -8,6 +8,10 @@ export default function AddComments({ docId, comments, setComments, commentInput
   
   const { user: {displayName} } = useContext(UserContext);
   
+  const handleSubmitComment = async (e) => {
+    e.preventDefault();
+  }
+  
   return(
     <div></div>
   )
