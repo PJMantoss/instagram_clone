@@ -7,7 +7,11 @@ export default function Comments({ docId, comments: allComments, posted, comment
   
   return(
     <div className="p-4 pt-1 pb-4">
-        {}
+        {comments.length >= 3 && (
+          <p className="text-sm text-gray-500 mb-1 cursor-pointer">
+              View all {comments.length} comments
+          </p>
+        )}
     </div>
   )
 };
