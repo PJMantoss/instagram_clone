@@ -10,6 +10,9 @@ export default function AddComments({ docId, comments, setComments, commentInput
   
   const handleSubmitComment = async (e) => {
     e.preventDefault();
+    
+    setComments([{ displayName, comments }, ...comments]);
+    setComments('');
   }
   
   return(
