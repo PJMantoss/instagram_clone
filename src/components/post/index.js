@@ -20,7 +20,12 @@ export default function Post({ content }){
             handleFocus={handleFocus}
         />
         <Footer username={content.username} caption={content.caption} />
-        <Comments />
+        <Comments
+            docId={}
+            comments={}
+            posted={}
+            commentInput={}
+        />
     </div>
   );
 }
