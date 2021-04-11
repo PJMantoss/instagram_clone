@@ -13,6 +13,14 @@ export default function AddComments({ docId, comments, setComments, commentInput
     
     setComments([{ displayName, comments }, ...comments]);
     setComments('');
+    
+    return await firebase
+           .firestore()
+           .collection('photos')
+           .doc(docId)
+           .update({
+                comments: {}
+            })
   }
   
   return(
