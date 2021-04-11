@@ -14,7 +14,7 @@ export default function AddComments({ docId, comments, setComments, commentInput
     setComments([{ displayName, comments }, ...comments]);
     setComments('');
     
-    return await firebase
+    return firebase
            .firestore()
            .collection('photos')
            .doc(docId)
@@ -24,6 +24,6 @@ export default function AddComments({ docId, comments, setComments, commentInput
   }
   
   return(
-    <div></div>
+    <div className=""></div>
   )
 }
