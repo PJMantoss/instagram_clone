@@ -27,7 +27,7 @@ export default function AddComments({ docId, comments, setComments, commentInput
     <div className="border-t border-gray">
         <form 
             className="flex w-full justify-between pl-0 pr-5"
-            onSubmit={(e) => comment.length > 3 ? handleSubmitComment(e) : e.preventDefault()}
+            onSubmit={(e) => comment.length >= 3 ? handleSubmitComment(e) : e.preventDefault()}
             method="POST"
         >
             <input
