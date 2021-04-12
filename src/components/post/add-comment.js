@@ -41,7 +41,7 @@ export default function AddComments({ docId, comments, setComments, commentInput
                 className={`text-sm font-bold text-blue ${!comment && 'opacity-25'}`}
                 type="button"
                 disabled={comment.length < 3}
-                onClick={}
+                onClick={handleSubmitComment}
             >
                   Post
             </button>
