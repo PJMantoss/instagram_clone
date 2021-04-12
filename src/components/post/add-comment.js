@@ -30,6 +30,7 @@ export default function AddComments({ docId, comments, setComments, commentInput
                 aria-label="Add a comment"
                 type="text"
                 autoComplete="off"
+                className="text-sm text-gray"
             />
         </form>
     </div>
