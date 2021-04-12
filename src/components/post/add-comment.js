@@ -34,6 +34,8 @@ export default function AddComments({ docId, comments, setComments, commentInput
                 name="add-comment"
                 placeholder="Add a comment..."
                 value={comment}
+                onChange={}
+                ref={}
             />
         </form>
     </div>
