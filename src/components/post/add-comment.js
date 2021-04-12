@@ -25,7 +25,7 @@ export default function AddComments({ docId, comments, setComments, commentInput
   
   return(
     <div className="border-t border-gray">
-        <form>
+        <form className="flex w-full">
             <input />
         </form>
     </div>
