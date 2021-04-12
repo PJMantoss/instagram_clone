@@ -25,7 +25,9 @@ export default function AddComments({ docId, comments, setComments, commentInput
   
   return(
     <div className="border-t border-gray">
-        <form><input /></form>
+        <form>
+            <input />
+        </form>
     </div>
   )
 }
