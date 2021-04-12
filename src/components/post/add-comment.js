@@ -31,6 +31,8 @@ export default function AddComments({ docId, comments, setComments, commentInput
                 type="text"
                 autoComplete="off"
                 className="text-sm text-gray w-full mr-3 py-5 px-4"
+                name="add a comment"
+                placeholder="Add a comment..."
             />
         </form>
     </div>
