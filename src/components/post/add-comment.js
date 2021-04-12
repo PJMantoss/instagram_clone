@@ -38,7 +38,7 @@ export default function AddComments({ docId, comments, setComments, commentInput
                 ref={commentInput}
             />
             <button
-                className=""
+                className={`text-sm ${}`}
                 type="button"
             >
                   Post
