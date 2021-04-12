@@ -25,7 +25,11 @@ export default function AddComments({ docId, comments, setComments, commentInput
   
   return(
     <div className="border-t border-gray">
-        <form className="flex w-full justify-between pl-0 pr-5">
+        <form 
+            className="flex w-full justify-between pl-0 pr-5"
+            onSubmit={}
+            method="POST"
+        >
             <input
                 aria-label="Add a comment"
                 type="text"
