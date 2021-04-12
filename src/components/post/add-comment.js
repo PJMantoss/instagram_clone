@@ -37,7 +37,11 @@ export default function AddComments({ docId, comments, setComments, commentInput
                 onChange={({ target }) => setComment(target.value)}
                 ref={commentInput}
             />
-            <button>Post</button>
+            <button
+                className=""
+            >
+                  Post
+            </button>
         </form>
     </div>
   )
