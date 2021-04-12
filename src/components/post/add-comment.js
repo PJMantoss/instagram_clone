@@ -39,6 +39,7 @@ export default function AddComments({ docId, comments, setComments, commentInput
             />
             <button
                 className=""
+                type="button"
             >
                   Post
             </button>
