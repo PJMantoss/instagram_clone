@@ -5,6 +5,6 @@ import Skeleton from 'react-loading-skeleton';
 const user = () => !username || !fullname ? (
                         <Skeleton count={1} height={61} />
                     ) : (
-                        <Link to={`/p/${username}`} className={}>
+                        <Link to={`/p/${username}`} className="grid-grid-cols-5">
                         </Link>
                     );
