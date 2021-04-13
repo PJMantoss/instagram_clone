@@ -13,7 +13,7 @@ const User = ({ username, fullName }) => !username || !fullName ? (
                                     alt="My Profile"
                                 />
                             </div>
-                            <div>
+                            <div className="col-span-3">
                                 <p></p>
                             </div>
                         </Link>
