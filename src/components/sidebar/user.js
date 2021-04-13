@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Skeleton from 'react-loading-skeleton';
 
 const user = () => !username || !fullname ? (
-                       <Skeleton count={1} height={61} />
+                        <Skeleton count={1} height={61} />
                     ) : (
-  
+                        <Link></Link>
                     );
