@@ -18,7 +18,7 @@ const Suggestions = ({ userId }) => {
   }, [userId])
   
   return !profiles ? (
-               <Skeleton />
+               <Skeleton count={} height={} className="mt-5" />
            ) : profiles.length > 0 ? (
            );
 }
