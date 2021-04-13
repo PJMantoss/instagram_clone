@@ -20,4 +20,4 @@ const User = ({ username, fullName }) => !username || !fullName ? (
                         </Link>
                     );
 
-export default User;
+export default memo(User);
