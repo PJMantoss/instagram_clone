@@ -5,5 +5,9 @@ import User from './user';
 export default function Sidebar(){
     const { user: { docId, userId, following, username, fullName } } = useUser();
     
-    return(<p>I am the Sidebar</p>)
+    return(
+        <div>
+            <User />
+        </div>
+    )
 }
