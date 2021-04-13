@@ -13,6 +13,9 @@ const User = ({ username, fullName }) => !username || !fullName ? (
                                     alt="My Profile"
                                 />
                             </div>
+                            <div>
+                                <p></p>
+                            </div>
                         </Link>
                     );
 
