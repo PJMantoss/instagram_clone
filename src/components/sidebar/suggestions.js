@@ -4,6 +4,9 @@ import Skeleton from 'react-loading-skeleton';
 const Suggestions = ({ userId }) => {
   const [profiles, setProfiles] = useState(null);
   
+  useEffect(() => {
+  }, [])
+  
   return(<div></div>);
 }
 
