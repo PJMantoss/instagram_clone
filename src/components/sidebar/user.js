@@ -5,5 +5,6 @@ import Skeleton from 'react-loading-skeleton';
 const user = () => !username || !fullname ? (
                         <Skeleton count={1} height={61} />
                     ) : (
-                        <Link></Link>
+                        <Link to={} className={}>
+                        </Link>
                     );
