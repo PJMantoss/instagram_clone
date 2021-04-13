@@ -17,7 +17,10 @@ const Suggestions = ({ userId }) => {
     
   }, [userId])
   
-  return(<div></div>);
+  return !profiles ? (
+               <Skeleton />
+           ) : profiles.length > 0 ? (
+           );
 }
 
 export default Suggestions;
