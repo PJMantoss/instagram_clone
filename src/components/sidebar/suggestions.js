@@ -21,7 +21,7 @@ const Suggestions = ({ userId }) => {
                <Skeleton count={1} height={150} className="mt-5" />
            ) : profiles.length > 0 ? (
                //profiles
-           );
+           ) : null;
 }
 
-export default Suggestions;
+export default memo(Suggestions);
