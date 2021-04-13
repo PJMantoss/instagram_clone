@@ -7,7 +7,7 @@ export default function Sidebar(){
     
     return(
         <div>
-            <User />
+            <User username={username} fullName={fullName} />
         </div>
     )
 }
