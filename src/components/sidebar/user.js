@@ -14,7 +14,7 @@ const User = ({ username, fullName }) => !username || !fullName ? (
                                 />
                             </div>
                             <div className="col-span-3">
-                                <p></p>
+                                <p className="">{username}</p>
                             </div>
                         </Link>
                     );
