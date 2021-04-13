@@ -10,7 +10,7 @@ const User = ({ username, fullName }) => !username || !fullName ? (
                                 <img
                                     className="rounded-full w-16 flex mr-3"
                                     src={`/images/avatars/${username}.jpg`}
-                                    alt={}
+                                    alt="My Profile"
                                 />
                             </div>
                         </Link>
