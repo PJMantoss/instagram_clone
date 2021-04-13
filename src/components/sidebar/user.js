@@ -9,3 +9,5 @@ const User = ({ username, fullName }) => !username || !fullName ? (
                             <p>{username}</p>
                         </Link>
                     );
+
+export default User;
