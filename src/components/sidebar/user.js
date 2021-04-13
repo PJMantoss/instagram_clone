@@ -7,7 +7,11 @@ const User = ({ username, fullName }) => !username || !fullName ? (
                     ) : (
                         <Link to={`/p/${username}`} className="grid grid-cols-5 gap-4 mb-4 items-center">
                             <div className="flex items-center justify-between col-span-1">
-                                <img />
+                                <img
+                                    className=""
+                                    src={}
+                                    alt={}
+                                />
                             </div>
                         </Link>
                     );
