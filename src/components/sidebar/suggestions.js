@@ -6,8 +6,11 @@ const Suggestions = ({ userId }) => {
   const [profiles, setProfiles] = useState(null);
   
   useEffect(() => {
-    async function suggestedProfiles(){}
-  }, [])
+    async function suggestedProfiles(){
+      const response = await getSuggestedProfiles(userId);
+      setProfiles(response);
+    }
+  }, [userId])
   
   return(<div></div>);
 }
