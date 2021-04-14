@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom';
 export default function SuggestedProfile({ userDocId, username, profileId, userId }){
   const [followed, setFollowed] = useState(false);
   
+  async function handleFollowUser(){
+    setFollowed(true);
+  }
+  
   return !followed ? (
           <div className="flex flex-row items-center align-items justify-between">
               <div className="flex items-center justify-between">
