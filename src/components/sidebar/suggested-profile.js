@@ -5,7 +5,7 @@ export default function SuggestedProfile({ userDocId, username, profileId, userI
   const [followed, setFollowed] = useState(false);
   
   return !followed ? (
-          <div className="flex flex-row items-center">
+          <div className="flex flex-row items-center align-items justify-between">
               <img />
               <Link></Link>
           </div>
