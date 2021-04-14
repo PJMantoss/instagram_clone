@@ -11,7 +11,9 @@ export default function SuggestedProfile({ userDocId, username, profileId, userI
                   src={`/images/avatars/${username}.jpg`}
                   alt={`Follow ${username}`}
               />
-              <Link></Link>
+              <Link to={}>
+                  <p className=""></p>
+              </Link>
           </div>
       ) : null;
 };
