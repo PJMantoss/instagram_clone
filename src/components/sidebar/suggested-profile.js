@@ -16,6 +16,7 @@ export default function SuggestedProfile({ userDocId, username, profileId, userI
                       <p className="font-bold text-sm">{username}</p>
                   </Link>
               </div>
+              <div className=""></div>
           </div>
       ) : null;
 };
