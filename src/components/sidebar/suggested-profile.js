@@ -7,7 +7,7 @@ export default function SuggestedProfile({ userDocId, username, profileId, userI
   return !followed ? (
           <div className="flex flex-row items-center align-items justify-between">
               <img
-                  className="rounded-full w-8"
+                  className="rounded-full w-8 flex mr-3"
                   src={}
                   alt={}
               />
