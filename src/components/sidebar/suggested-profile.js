@@ -1,5 +1,5 @@
 import React from 'react';
 
-export default function SuggestedProfile({ userDocId, profileId, userId }){
+export default function SuggestedProfile({ userDocId, username, profileId, userId }){
   return();
 };
