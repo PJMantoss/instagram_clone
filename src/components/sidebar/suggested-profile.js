@@ -16,8 +16,8 @@ export default function SuggestedProfile({ userDocId, username, profileId, userI
                       <p className="font-bold text-sm">{username}</p>
                   </Link>
               </div>
-              <div className="">
-                  <button></button>
+              <div className="flex">
+                  <button>Follow</button>
               </div>
           </div>
       ) : null;
