@@ -30,7 +30,11 @@ const Suggestions = ({ userId }) => {
                <Skeleton count={1} height={150} className="mt-5" />
            ) : profiles.length > 0 ? (
                //profiles
-               <div className="grid"></div>
+               <div className="grid">
+                   {profiles.map((profile) => (
+                       <SuggestedProfile />
+                   ))}
+               </div>
            ) : null;
 }
 
