@@ -9,7 +9,7 @@ export default function SuggestedProfile({ userDocId, username, profileId, userI
               <img
                   className="rounded-full w-8 flex mr-3"
                   src={`/images/avatars/${username}.jpg`}
-                  alt={}
+                  alt={`Follow ${username}`}
               />
               <Link></Link>
           </div>
