@@ -24,7 +24,7 @@ export default function SuggestedProfile({ userDocId, username, profileId, userI
                   <button
                       className="text-sm font-bold text-blue"
                       type="button"
-                      onClick={}
+                      onClick={handleFollowUser}
                   >
                       Follow
                   </button>
