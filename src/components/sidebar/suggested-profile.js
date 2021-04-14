@@ -17,7 +17,10 @@ export default function SuggestedProfile({ userDocId, username, profileId, userI
                   </Link>
               </div>
               <div className="flex">
-                  <button>Follow</button>
+                  <button
+                  >
+                      Follow
+                  </button>
               </div>
           </div>
       ) : null;
