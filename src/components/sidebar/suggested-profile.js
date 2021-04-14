@@ -18,6 +18,9 @@ export default function SuggestedProfile({ userDocId, username, profileId, userI
               </div>
               <div className="flex">
                   <button
+                      className=""
+                      type=""
+                      onClick={}
                   >
                       Follow
                   </button>
