@@ -5,7 +5,13 @@ import { getSuggestedProfiles } from '../../services/firebase';
 
 const Suggestions = ({ userId }) => {
   const [profiles, setProfiles] = useState([
-    {}
+    {
+      docId: '1',
+      userDocId: 1,
+      username: 'Dali',
+      profileId: '2',
+      userId: '3'
+    }
   ]);
   
   useEffect(() => {
