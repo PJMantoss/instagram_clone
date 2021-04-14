@@ -8,7 +8,14 @@ const Suggestions = ({ userId }) => {
     {
       docId: '1',
       userDocId: 1,
-      username: 'Dali',
+      username: 'dali',
+      profileId: '2',
+      userId: '3'
+    },
+    {
+      docId: '2',
+      userDocId: 1,
+      username: 'orwell',
       profileId: '2',
       userId: '3'
     }
