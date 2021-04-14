@@ -4,5 +4,9 @@ export default function SuggestedProfile({ userDocId, username, profileId, userI
   const [followed, setFollowed] = useState(false);
   
   return !followed ? (
+          <div>
+              <img />
+              <Link></Link>
+          </div>
       ) : null;
 };
