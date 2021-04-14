@@ -12,7 +12,7 @@ export default function SuggestedProfile({ userDocId, username, profileId, userI
                   alt={`Follow ${username}`}
               />
               <Link to={`/p/${username}`}>
-                  <p className=""></p>
+                  <p className="font-bold text-sm">{username}</p>
               </Link>
           </div>
       ) : null;
