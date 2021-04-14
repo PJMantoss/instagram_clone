@@ -32,7 +32,11 @@ const Suggestions = ({ userId }) => {
                //profiles
                <div className="grid">
                    {profiles.map((profile) => (
-                       <SuggestedProfile />
+                       <SuggestedProfile 
+                           key={}
+                           userDocId={}
+                           username={}
+                       />
                    ))}
                </div>
            ) : null;
