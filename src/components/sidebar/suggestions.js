@@ -33,9 +33,11 @@ const Suggestions = ({ userId }) => {
                <div className="grid">
                    {profiles.map((profile) => (
                        <SuggestedProfile 
-                           key={}
-                           userDocId={}
-                           username={}
+                           key={profile.docId}
+                           userDocId={profile.docId}
+                           username={profile.username}
+                           profileId={profile.userId}
+                           userId={userId}
                        />
                    ))}
                </div>
