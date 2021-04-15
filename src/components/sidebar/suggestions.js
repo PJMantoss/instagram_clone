@@ -39,6 +39,7 @@ const Suggestions = ({ userId }) => {
                //profiles
                <div className="flex flex-col">
                    <div className="">
+                       <p>Suggestions for you</p>
                    </div>
                    <div className="grid">
                        {profiles.map((profile) => (
