@@ -58,5 +58,5 @@ async function getSuggestedProfiles(userId){
     
     const [{ following: userFollowing = [] }] = result.docs
           .map(user => user.data())
-          .filter()
+          .filter(profile => profile.userId === userId)
 }
