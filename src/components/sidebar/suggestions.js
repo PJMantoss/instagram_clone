@@ -41,7 +41,7 @@ const Suggestions = ({ userId }) => {
                    <div className="flex items-center align-items justify-between mb-2">
                        <p className="font-bold text-gray text-sm">Suggestions for you</p>
                    </div>
-                   <div className="grid">
+                   <div className="grid gap-5 mt-4">
                        {profiles.map((profile) => (
                            <SuggestedProfile 
                                key={profile.docId}
