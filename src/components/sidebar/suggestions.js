@@ -37,16 +37,18 @@ const Suggestions = ({ userId }) => {
                <Skeleton count={1} height={150} className="mt-5" />
            ) : profiles.length > 0 ? (
                //profiles
-               <div className="grid">
-                   {profiles.map((profile) => (
-                       <SuggestedProfile 
-                           key={profile.docId}
-                           userDocId={profile.docId}
-                           username={profile.username}
-                           profileId={profile.userId}
-                           userId={userId}
-                       />
-                   ))}
+               <div className="">
+                   <div className="grid">
+                       {profiles.map((profile) => (
+                           <SuggestedProfile 
+                               key={profile.docId}
+                               userDocId={profile.docId}
+                               username={profile.username}
+                               profileId={profile.userId}
+                               userId={userId}
+                           />
+                       ))}
+                   </div>
                </div>
            ) : null;
 }
