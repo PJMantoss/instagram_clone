@@ -38,7 +38,7 @@ const Suggestions = ({ userId }) => {
            ) : profiles.length > 0 ? (
                //profiles
                <div className="flex flex-col">
-                   <div className="flex flex-items">
+                   <div className="flex items-center align-items">
                        <p>Suggestions for you</p>
                    </div>
                    <div className="grid">
