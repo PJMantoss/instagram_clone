@@ -39,7 +39,7 @@ const Suggestions = ({ userId }) => {
                //profiles
                <div className="flex flex-col">
                    <div className="flex items-center align-items justify-between mb-2">
-                       <p className="font-bold text-gray">Suggestions for you</p>
+                       <p className="font-bold text-gray text-sm">Suggestions for you</p>
                    </div>
                    <div className="grid">
                        {profiles.map((profile) => (
