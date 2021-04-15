@@ -57,6 +57,6 @@ async function getSuggestedProfiles(userId){
     const result = await firebase.firestore().collection('users').limit(10).get()
     
     const [{ following: userFollowing = [] }] = result.docs
-          .map()
+          .map(user => user.data())
           .filter()
 }
