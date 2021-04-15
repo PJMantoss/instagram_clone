@@ -61,5 +61,5 @@ async function getSuggestedProfiles(userId){
           .filter(profile => profile.userId === userId)
     
     return result.docs
-          .map(user => ({  }))
+          .map(user => ({ ...user.data(), docId: user.id }))
 }
