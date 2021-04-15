@@ -52,3 +52,5 @@ export default function getUserFollowedPhotos(userId, followingUserIds){
     
     return photosWithUserDetails;
 }
+
+async function getSuggestedProfiles(){}
