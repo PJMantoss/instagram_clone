@@ -54,4 +54,5 @@ export default function getUserFollowedPhotos(userId, followingUserIds){
 }
 
 async function getSuggestedProfiles(userId){
+    const result = await firebase.firestore().collection().limit().get()
 }
