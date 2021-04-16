@@ -7,6 +7,8 @@ export default function SuggestedProfile({ userDocId, username, profileId, userI
   
   async function handleFollowUser(){
     setFollowed(true);
+    
+    const [{  }] = awaitgetUserByUserId(userId);
   }
   
   return !followed ? (
