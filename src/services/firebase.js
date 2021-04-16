@@ -63,6 +63,12 @@ export async function getSuggestedProfiles(userId){
           .filter(profile => profile.userId !== userId && !following.includes(profile.userId))
 }
 
-export async function updateUserFollowing(docId, profileId, isFollowingProfile){};
+export async function updateUserFollowing(docId, profileId, isFollowingProfile){
+    return firebase
+        .firestore()
+        .collection('users')
+        .docId()
+        .update()
+};
 
 export async function updateFollowedUserFollowers(docId, followingUserId, isFollowingProfile){};
