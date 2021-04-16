@@ -67,8 +67,10 @@ export async function updateUserFollowing(docId, profileId, isFollowingProfile){
     return firebase
         .firestore()
         .collection('users')
-        .docId()
-        .update()
+        .docId(docId)
+        .update({
+        following: ? :
+    })
 };
 
 export async function updateFollowedUserFollowers(docId, followingUserId, isFollowingProfile){};
