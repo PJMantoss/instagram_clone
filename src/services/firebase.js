@@ -65,4 +65,4 @@ export async function getSuggestedProfiles(userId){
 
 export async function updateUserFollowing(docId, profileId, isFollowingProfile){};
 
-export async function updateFollowedUserFollowers(docId, isFollowingProfile){};
+export async function updateFollowedUserFollowers(docId, followingUserId, isFollowingProfile){};
