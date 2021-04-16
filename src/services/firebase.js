@@ -70,7 +70,7 @@ export async function updateUserFollowing(docId, profileId, isFollowingProfile){
         .docId(docId)
         .update({
         following: isFollowingProfile
-            ? 
+            ? FieldValue.arrayRemove(profileId)
             :
     })
 };
