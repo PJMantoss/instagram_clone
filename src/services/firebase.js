@@ -71,8 +71,8 @@ export async function updateUserFollowing(docId, profileId, isFollowingProfile){
         .update({
         following: isFollowingProfile
             ? FieldValue.arrayRemove(profileId)
-            :
-    })
+            : FieldValue.arrayUnion(followingUserId)
+    });
 };
 
 export async function updateFollowedUserFollowers(docId, followingUserId, isFollowingProfile){};
