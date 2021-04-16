@@ -75,4 +75,14 @@ export async function updateUserFollowing(docId, profileId, isFollowingProfile){
     });
 };
 
-export async function updateFollowedUserFollowers(docId, followingUserId, isFollowingProfile){};
+export async function updateFollowedUserFollowers(docId, followingUserId, isFollowingProfile){
+    return firebase
+        .firestore()
+        .collection('users')
+        .docId(docId)
+        .update({
+        following: isFollowingProfile
+            ? FieldValue.arrayRemove(followingUserId)
+            : FieldValue.arrayUnion(followingUserId)
+    });
+};
