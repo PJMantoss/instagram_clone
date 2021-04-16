@@ -69,7 +69,9 @@ export async function updateUserFollowing(docId, profileId, isFollowingProfile){
         .collection('users')
         .docId(docId)
         .update({
-        following: ? :
+        following: isFollowingProfile
+            ? 
+            :
     })
 };
 
