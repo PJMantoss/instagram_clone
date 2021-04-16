@@ -53,7 +53,7 @@ export default function getUserFollowedPhotos(userId, followingUserIds){
     return photosWithUserDetails;
 }
 
-async function getSuggestedProfiles(userId){
+export async function getSuggestedProfiles(userId){
     const result = await firebase.firestore().collection('users').limit(10).get()
     
     const [{ following }] = getUserByUserId(userId)
@@ -63,4 +63,6 @@ async function getSuggestedProfiles(userId){
           .filter(profile => profile.userId !== userId && !following.includes(profile.userId))
 }
 
-async function updateUserFollowing(docId, profileId, isFollowingProfile){};
+export async function updateUserFollowing(docId, profileId, isFollowingProfile){};
+
+export async function updateFollowedUserFollowers(docId, isFollowingProfile){};
