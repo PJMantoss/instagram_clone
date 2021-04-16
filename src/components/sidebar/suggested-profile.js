@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { getUserByUserId, updateUserFollowing } from '../../services/firebase'; 
+import { getUserByUserId, updateUserFollowing, updateFollowedUserFollowers } from '../../services/firebase'; 
 
 export default function SuggestedProfile({ userDocId, username, profileId, userId }){
   const [followed, setFollowed] = useState(false);
