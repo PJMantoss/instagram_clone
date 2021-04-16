@@ -63,4 +63,4 @@ async function getSuggestedProfiles(userId){
           .filter(profile => profile.userId !== userId && !following.includes(profile.userId))
 }
 
-async function updateUserFollowing(docId, profileId){};
+async function updateUserFollowing(docId, profileId, isFollowingProfile){};
