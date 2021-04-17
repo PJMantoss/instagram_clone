@@ -27,7 +27,7 @@ export default function Profile(){
     return userExists ? (
         <div className="bg-gray">
             <Header />
-            <div className="mx-auto">
+            <div className="mx-auto max-w-screen-lg">
                 <UserProfile />
             </div>
         </div>
