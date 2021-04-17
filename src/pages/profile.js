@@ -27,6 +27,9 @@ export default function Profile(){
     return userExists ? (
         <div className="bg-gray">
             <Header />
+            <div className="">
+                <UserProfile />
+            </div>
         </div>
     ) : ();
 }
