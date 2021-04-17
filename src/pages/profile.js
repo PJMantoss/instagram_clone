@@ -25,6 +25,7 @@ export default function Profile(){
     }, [username, history]);
     
     return userExists ? (
-        <div></div>
+        <div className="bg-gray">
+        </div>
     ) : ();
 }
