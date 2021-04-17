@@ -11,7 +11,9 @@ export default function Profile(){
     const { history } = useHistory();
     
     useEffect(() => {
-        async function chekUserExistsToLoadProfile(){};
+        async function chekUserExistsToLoadProfile(){
+            const doesUserExist = await getUserByUsername(username);
+        };
     }, []);
     
     return(
