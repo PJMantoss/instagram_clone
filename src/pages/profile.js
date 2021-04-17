@@ -6,6 +6,9 @@ import { getUserByUsername } from '../services/firebase';
 import * as ROUTES from '../constants/routes';
 
 export default function Profile(){
+    const { username } = useParams();
+    const [] = useState();
+    
     return(
         <h1>Hello from Profile!</h1>
     )
