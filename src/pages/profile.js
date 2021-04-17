@@ -10,6 +10,8 @@ export default function Profile(){
     const [userExists, setUserExists] = useState(undefined);
     const { history } = useHistory();
     
+    useEffect(() => {}, []);
+    
     return(
         <h1>Hello from Profile!</h1>
     )
