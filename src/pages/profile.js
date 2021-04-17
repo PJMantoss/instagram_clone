@@ -24,7 +24,7 @@ export default function Profile(){
         chekUserExistsToLoadProfile();
     }, [username, history]);
     
-    return(
-        <h1>Hello from Profile!</h1>
-    )
+    return userExists ? (
+        <div></div>
+    ) : ();
 }
