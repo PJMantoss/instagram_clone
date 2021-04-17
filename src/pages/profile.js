@@ -20,7 +20,7 @@ export default function Profile(){
                 setUserExists(true);
             }
         };
-    }, []);
+    }, [username]);
     
     return(
         <h1>Hello from Profile!</h1>
