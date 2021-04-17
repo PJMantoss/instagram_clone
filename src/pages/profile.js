@@ -8,6 +8,7 @@ import * as ROUTES from '../constants/routes';
 export default function Profile(){
     const { username } = useParams();
     const [userExists, setUserExists] = useState(undefined);
+    const { history } = useHistory();
     
     return(
         <h1>Hello from Profile!</h1>
