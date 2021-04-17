@@ -28,7 +28,7 @@ export default function Profile(){
         <div className="bg-gray">
             <Header />
             <div className="mx-auto max-w-screen-lg">
-                <UserProfile />
+                <UserProfile username={username} />
             </div>
         </div>
     ) : ();
