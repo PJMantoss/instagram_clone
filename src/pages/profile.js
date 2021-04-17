@@ -10,7 +10,9 @@ export default function Profile(){
     const [userExists, setUserExists] = useState(undefined);
     const { history } = useHistory();
     
-    useEffect(() => {}, []);
+    useEffect(() => {
+        async function chekUserExistsToLoadProfile(){};
+    }, []);
     
     return(
         <h1>Hello from Profile!</h1>
