@@ -27,7 +27,7 @@ export default function Profile(){
     return userExists ? (
         <div className="bg-gray">
             <Header />
-            <div className="">
+            <div className="mx-auto">
                 <UserProfile />
             </div>
         </div>
