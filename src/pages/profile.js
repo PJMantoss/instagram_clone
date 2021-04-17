@@ -19,7 +19,9 @@ export default function Profile(){
             }else{
                 setUserExists(true);
             }
-        };
+        }
+        
+        chekUserExistsToLoadProfile();
     }, [username]);
     
     return(
