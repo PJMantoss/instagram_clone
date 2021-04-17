@@ -22,7 +22,7 @@ export default function Profile(){
         }
         
         chekUserExistsToLoadProfile();
-    }, [username]);
+    }, [username, history]);
     
     return(
         <h1>Hello from Profile!</h1>
