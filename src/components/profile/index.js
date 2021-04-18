@@ -1,6 +1,7 @@
 import React, { useReducer, useEffect } from 'react';
 import Header from './header';
 import Photos from './photos';
+import { getUserByUsername } from '../../services/firebase';
 
 const reducer = (state, newState) => ({ ...state, ...newState });
 const initialState = {
