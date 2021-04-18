@@ -10,6 +10,8 @@ const initialState = {
 }
 
 export default function Profile({ username }){
+  const [{}] = useReducer()
+  
   return(
     <>
         <Header />
