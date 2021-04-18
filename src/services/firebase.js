@@ -91,5 +91,6 @@ export async function getUserByUsername(username){
     return firebase
          .firestore()
          .collection('users')
-         .where('username', '===', username)
+         .where('username', '==', username)
+         .get()
 };
