@@ -87,8 +87,9 @@ export async function updateFollowedUserFollowers(docId, followingUserId, isFoll
     });
 };
 
-export async function getUserByUsername(){
+export async function getUserByUsername(username){
     return firebase
          .firestore()
          .collection('users')
+         .where('username', '===', username)
 };
