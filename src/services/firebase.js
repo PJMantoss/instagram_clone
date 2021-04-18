@@ -99,5 +99,5 @@ export async function getUserByUsername(username){
         docId: item.Id
     }));
     
-    return user.length > 0 :;
+    return user.length > 0 ? user : false;
 };
