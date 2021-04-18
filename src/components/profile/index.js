@@ -7,7 +7,7 @@ const reducer = (state, newState) => ({ ...state, ...newState });
 const initialState = {
   profile: {},
   photosCollection: [],
-  followerCount
+  followerCount: 0
 }
 
 export default function Profile({ username }){
