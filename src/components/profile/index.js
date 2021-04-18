@@ -10,7 +10,7 @@ const initialState = {
 }
 
 export default function Profile({ username }){
-  const [{}] = useReducer()
+  const [{}] = useReducer(reducer, initialState)
   
   return(
     <>
