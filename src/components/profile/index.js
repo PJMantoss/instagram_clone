@@ -13,7 +13,9 @@ export default function Profile({ username }){
   const [{ profile, photosCollection, followerCount }, dispatch] = useReducer(reducer, initialState);
   
   //think about caching here in localstorage so we don't make a network call we have already made previously (task)
-  useEffect(() => {}, [username]);
+  useEffect(() => {
+    async function getProfileInfoAndPhotos(){};
+  }, [username]);
   
   return(
     <>
