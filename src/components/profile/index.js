@@ -6,6 +6,7 @@ export default function Profile({ username }){
   return(
     <>
         <Header />
+        <Photos />
     </>
   )
 }
