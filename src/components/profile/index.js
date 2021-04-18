@@ -12,6 +12,8 @@ const initialState = {
 export default function Profile({ username }){
   const [{ profile, photosCollection, followerCount }, dispatch] = useReducer(reducer, initialState);
   
+  useEffect(() => {}, []);
+  
   return(
     <>
         <Header />
