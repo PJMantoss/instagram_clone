@@ -93,4 +93,11 @@ export async function getUserByUsername(username){
          .collection('users')
          .where('username', '==', username)
          .get()
+    
+    const user = result.docs.map(() => ({
+        ...item.data(),
+        docId: item.Id
+    }));
+    
+    return user.length > 0 :;
 };
