@@ -1,3 +1,5 @@
 import React, { useEffect } from 'react';
 
-export default function Profile({ username }){}
+export default function Profile({ username }){
+  return()
+}
