@@ -18,6 +18,8 @@ export default function Profile({ username }){
     async function getProfileInfoAndPhotos(){
       const [{ ...user }] = await getUserByUsername(username);
     };
+    
+    getProfileInfoAndPhotos();
   }, [username]);
   
   return(
