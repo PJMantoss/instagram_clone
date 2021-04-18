@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useReducer, useEffect } from 'react';
 import Header from './header';
 import Photos from './photos';
 
