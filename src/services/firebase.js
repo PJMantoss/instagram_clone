@@ -115,5 +115,5 @@ export async function getUserIdByUsername(username) {
 }
 
 export async function getUserPhotosByUsername(){
-    
+    const userId = await getUserIdByUsername(username);
 };
