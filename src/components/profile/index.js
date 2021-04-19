@@ -27,8 +27,13 @@ export default function Profile({ username }){
   
   return(
     <>
-        <Header />
-        <Photos />
+        <Header 
+            photosCollection={photosCollection.length}
+            profile={profile}
+            followerCount={followerCount}
+            setFollowerCount={dispatch}
+        />
+        <Photos photos={photosCollection} />
     </>
   )
 }
