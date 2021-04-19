@@ -112,6 +112,8 @@ export async function getUserIdByUsername(username) {
     const [{ userId = null }] = result.docs.map((item) => ({
         ...item.data(),
     }));
+    
+    return userId;
 }
 
 export async function getUserPhotosByUsername(){
