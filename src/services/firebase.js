@@ -119,6 +119,12 @@ export async function getUserIdByUsername(username) {
 export async function getUserPhotosByUsername(){
     const userId = await getUserIdByUsername(username);
     
+    const result = await firebase
+        .firestore()
+        .collection('photos')
+        .where('userId', '==', userId)
+        .get();
+    
     const photos = result.docs.map((item) => ({
         ...item.data(),
         docId: item.id
