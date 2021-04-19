@@ -101,3 +101,11 @@ export async function getUserByUsername(username){
     
     return user.length > 0 ? user : false;
 };
+
+export async function getUserPhotosByUsername(){
+    return firebase
+         .firestore()
+         .collection('users')
+         .where('username', '==', username)
+         .get()
+};
