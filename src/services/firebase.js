@@ -102,10 +102,18 @@ export async function getUserByUsername(username){
     return user.length > 0 ? user : false;
 };
 
+export async function getUserIdByUsername(username) {
+    const result = await firebase
+        .firestore()
+        .collection('users')
+        .where('username', '==', username)
+        .get();
+        
+    const [{ userId = null }] = result.docs.map((item) => ({
+        ...item.data(),
+    }));
+}
+
 export async function getUserPhotosByUsername(){
-    return firebase
-         .firestore()
-         .collection('users')
-         .where('username', '==', username)
-         .get()
+    
 };
