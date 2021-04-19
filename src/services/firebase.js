@@ -118,4 +118,11 @@ export async function getUserIdByUsername(username) {
 
 export async function getUserPhotosByUsername(){
     const userId = await getUserIdByUsername(username);
+    
+    const photos = result.docs.map((item) => ({
+        ...item.data(),
+        docId: item.id
+    }));
+    
+    return photos;
 };
