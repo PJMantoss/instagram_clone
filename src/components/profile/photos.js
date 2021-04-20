@@ -10,10 +10,11 @@ export default function Photos({ photos }){
                    <Skeleton key={index} count={1} width={320} height={400} />
                ))}
            </>
-          'No Posts Yet'
         ) : photos.length > 0 ? (
            <img src={photo.imageSrc} alt={photo.caption} />
         ) : null}
+        
+        {!photos || (photos.length === 0 && <p className="">No Posts Yet</p>)}
     </div>
   )
 };
