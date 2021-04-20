@@ -11,7 +11,9 @@ export default function Photos({ photos }){
                ))}
            </>
         ) : photos.length > 0 ? (
-           <img src={photo.imageSrc} alt={photo.caption} />
+          photos.map(photo => (
+            <img src={photo.imageSrc} alt={photo.caption} />
+          ))
         ) : null}
         
         {!photos || (photos.length === 0 && <p className="text-center text-2xl">No Photos Yet</p>)}
