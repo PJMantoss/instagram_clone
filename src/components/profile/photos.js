@@ -14,7 +14,7 @@ export default function Photos({ photos }){
            <img src={photo.imageSrc} alt={photo.caption} />
         ) : null}
         
-        {!photos || (photos.length === 0 && <p className="">No Posts Yet</p>)}
+        {!photos || (photos.length === 0 && <p className="text-center text-2xl">No Photos Yet</p>)}
     </div>
   )
 };
