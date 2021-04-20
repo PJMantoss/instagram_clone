@@ -8,7 +8,7 @@ export default function Photos({ photos }){
         {photos == 0 ? (
           'No Posts Yet'
         ) : (
-           photos.map()
+           photos.map(photo => photo.docId)
         )}
     </div>
   )
