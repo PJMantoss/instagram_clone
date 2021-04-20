@@ -7,13 +7,13 @@ export default function Photos({ photos }){
         {!photos ? (
            <>
                {[...new, Array(9)].map((_, index) => (
-                   <Skeleton count={9} width={320} height={400} />
+                   <Skeleton key={index} count={1} width={320} height={400} />
                ))}
            </>
           'No Posts Yet'
         ) : photos.length > 0 ? (
-           photos.map(photo => photo.docId)
-        )}
+           <img src={} alt={} />
+        ) : null}
     </div>
   )
 };
