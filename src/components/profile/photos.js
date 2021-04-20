@@ -5,6 +5,10 @@ export default function Photos({ photos }){
   return(
     <div>
         <Skeleton count={} width={} height={} />
+        {photos == 0 ? (
+          'No Posts Yet'
+        ) : (
+        )}
     </div>
   )
 };
