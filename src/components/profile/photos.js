@@ -12,7 +12,9 @@ export default function Photos({ photos }){
            </>
         ) : photos.length > 0 ? (
           photos.map(photo => (
-            <img src={photo.imageSrc} alt={photo.caption} />
+            <div key={photo.docId} className="relative group">
+                <img src={photo.imageSrc} alt={photo.caption} />
+            </div>
           ))
         ) : null}
         
