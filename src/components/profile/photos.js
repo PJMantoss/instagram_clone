@@ -12,7 +12,7 @@ export default function Photos({ photos }){
            </>
           'No Posts Yet'
         ) : photos.length > 0 ? (
-           <img src={} alt={} />
+           <img src={photo.imageSrc} alt={photo.caption} />
         ) : null}
     </div>
   )
