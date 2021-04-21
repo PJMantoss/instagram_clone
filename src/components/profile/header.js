@@ -13,7 +13,7 @@ export default function Header({
            <img
                className="rounded-full h-40 w-40 flex"
                alt={`${username} profile picture`}
-               src={}
+               src={`/images/avatars/${username}.jpg`}
            />
        </div>
     
