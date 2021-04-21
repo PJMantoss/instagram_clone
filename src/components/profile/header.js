@@ -27,7 +27,12 @@ export default function Header({
            <div className="container flex items-center">
                <p className="text-2xl mr-4">{username}</p>
                {activeBtnFollowState && (
-                   <button>
+                   <button
+                       className=""
+                       type=""
+                       onClick={}
+                   >
+                       {}
                    </button>
                )}
            </div>
