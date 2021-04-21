@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import useuser from '../../hooks/use-user';
 
 export default function Header({
   photosCount,
@@ -8,6 +9,7 @@ export default function Header({
   username
 }){
   
+  const { user } = useUser();
   const [isFollowingProfile, setIsFoloowingProfile] = useState(false);
   const activeBtnFollowState = user.username && user.username !== username;
   
