@@ -8,7 +8,7 @@ export default function Header({
   username
 }){
   return(
-    <div className="grid grid-cols-3 gap-4 justify-between mx-auto">
+    <div className="grid grid-cols-3 gap-4 justify-between mx-auto max-w-screen-lg">
     </div>
   )
 };
