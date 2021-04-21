@@ -11,7 +11,7 @@ export default function Header({
   
   const { user } = useUser();
   const [isFollowingProfile, setIsFoloowingProfile] = useState(false);
-  const activeBtnFollowState = user.username && user.username !== username;
+  const activeBtnFollow = user.username && user.username !== username;
   
   return(
     <div className="grid grid-cols-3 gap-4 justify-between mx-auto max-w-screen-lg">
@@ -26,7 +26,7 @@ export default function Header({
        <div className="flex items-center justify-center flex-col col-span-2">
            <div className="container flex items-center">
                <p className="text-2xl mr-4">{username}</p>
-               {activeBtnFollowState && (
+               {activeBtnFollow && (
                    <button
                        className="bg-blue-500 font-bold text-sm rounded text-white w-20 h-8"
                        type="button"
