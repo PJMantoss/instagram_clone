@@ -8,6 +8,7 @@ export default function Header({
   username
 }){
   return(
-    <div>I am the Header of the profile</div>
+    <div className="grid grid-cols-3">
+    </div>
   )
 };
