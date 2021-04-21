@@ -26,6 +26,10 @@ export default function Header({
        <div className="flex items-center justify-center flex-col col-span-2">
            <div className="container flex items-center">
                <p className="text-2xl mr-4">{username}</p>
+               {activeBtnFollowState && (
+                   <button>
+                   </button>
+               )}
            </div>
        </div>
     </div>
