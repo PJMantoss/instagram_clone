@@ -7,6 +7,9 @@ export default function Header({
   profile,
   username
 }){
+  
+  const [isFollowingProfile, setIsFoloowingProfile] = useState(false);
+  
   return(
     <div className="grid grid-cols-3 gap-4 justify-between mx-auto max-w-screen-lg">
        <div className="container flex justify-center">
