@@ -28,9 +28,9 @@ export default function Header({
                <p className="text-2xl mr-4">{username}</p>
                {activeBtnFollowState && (
                    <button
-                       className="bg-blue-500 font-bold text-sm rounded text-white"
+                       className="bg-blue-500 font-bold text-sm rounded text-white w-20 h-8"
                        type="button"
-                       onClick={}
+                       onClick={() => console.log('I am a button')}
                    >
                        {isFollowingProfile ? 'Unfollow' : 'Follow'}
                    </button>
