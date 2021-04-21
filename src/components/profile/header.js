@@ -17,7 +17,7 @@ export default function Header({
            />
        </div>
     
-       <div className="flex items-center justify-center">
+       <div className="flex items-center justify-center flex-col col-span-2">
        </div>
     </div>
   )
