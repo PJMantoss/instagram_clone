@@ -28,11 +28,11 @@ export default function Header({
                <p className="text-2xl mr-4">{username}</p>
                {activeBtnFollowState && (
                    <button
-                       className=""
-                       type=""
+                       className="bg-blue-500 font-bold"
+                       type="button"
                        onClick={}
                    >
-                       {}
+                       {isFollowingProfile ? 'Unfollow' : 'Follow'}
                    </button>
                )}
            </div>
