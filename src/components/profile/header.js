@@ -10,7 +10,11 @@ export default function Header({
   return(
     <div className="grid grid-cols-3 gap-4 justify-between mx-auto max-w-screen-lg">
        <div className="container flex justify-center">
-           <img />
+           <img
+               className="rounded-full"
+               alt={}
+               src={}
+           />
        </div>
     
        <div className="flex"></div>
