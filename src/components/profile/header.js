@@ -18,8 +18,8 @@ export default function Header({
        </div>
     
        <div className="flex items-center justify-center flex-col col-span-2">
-           <div className="container">
-               <p></p>
+           <div className="container flex items-center">
+               <p className=""></p>
            </div>
        </div>
     </div>
