@@ -28,7 +28,7 @@ export default function Header({
                <p className="text-2xl mr-4">{username}</p>
                {activeBtnFollowState && (
                    <button
-                       className="bg-blue-500 font-bold"
+                       className="bg-blue-500 font-bold text-sm rounded"
                        type="button"
                        onClick={}
                    >
