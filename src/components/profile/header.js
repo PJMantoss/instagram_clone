@@ -7,7 +7,7 @@ export default function Header({
   followerCount,
   setFollowerCount,
   username,
-  profile: { docId: profileDocId, userId: profileUserId, fullName, following }
+  profile: { docId: profileDocId, userId: profileUserId, fullName, following = [] }
 }){
   
   const { user } = useUser();
@@ -52,7 +52,7 @@ export default function Header({
                      </p>
 
                      <p className="mr-10">
-                         <span className="font-bold">{followerCount}</span> photos
+                         <span className="font-bold">{following.length}</span> following
                      </p>
                  </>  
                )}
