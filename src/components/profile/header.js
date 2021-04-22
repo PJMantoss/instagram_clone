@@ -43,6 +43,10 @@ export default function Header({
                ) : (
                  <>
                      <p className="mr-10">
+                         <span className="font-bold">{followerCount}</span> photos
+                     </p>
+
+                     <p className="mr-10">
                          <span className="font-bold">{followerCount}</span> followers
                      </p>
                  </>  
