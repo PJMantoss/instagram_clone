@@ -39,7 +39,9 @@ export default function Header({
            </div>
            <div className="container flex mt-4">
                {followers === undefined || following === undefined ? (
+                   <Skeleton />
                ) : (
+                   
                )}
            </div>
        </div>
