@@ -42,7 +42,9 @@ export default function Header({
                    <Skeleton count={1} width={677} height={24} />
                ) : (
                  <>
-                     <p className="mr-10"></p>
+                     <p className="mr-10">
+                         <span className="font-bold">{followerCount}</span> followers
+                     </p>
                  </>  
                )}
            </div>
