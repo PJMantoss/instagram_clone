@@ -41,7 +41,9 @@ export default function Header({
                {!followerCount === undefined || !following === undefined ? (
                    <Skeleton count={1} width={677} height={24} />
                ) : (
-                 ()  
+                 <>
+                     <p className="mr-10"></p>
+                 </>  
                )}
            </div>
        </div>
