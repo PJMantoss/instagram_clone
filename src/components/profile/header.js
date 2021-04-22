@@ -5,8 +5,8 @@ export default function Header({
   photosCount,
   followerCount,
   setFollowerCount,
-  profile,
-  username
+  username,
+  profile: { docId: profileDocId, userId: profileUserId }
 }){
   
   const { user } = useUser();
