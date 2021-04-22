@@ -47,7 +47,8 @@ export default function Header({
                      </p>
 
                      <p className="mr-10">
-                         <span className="font-bold">{followerCount}</span> followers
+                         <span className="font-bold">{followerCount}</span> {' '}
+                         {followerCount === 1 ? 'follower' : 'followers'}
                      </p>
                  </>  
                )}
