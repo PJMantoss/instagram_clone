@@ -50,6 +50,10 @@ export default function Header({
                          <span className="font-bold">{followerCount}</span> {' '}
                          {followerCount === 1 ? 'follower' : 'followers'}
                      </p>
+
+                     <p className="mr-10">
+                         <span className="font-bold">{followerCount}</span> photos
+                     </p>
                  </>  
                )}
            </div>
