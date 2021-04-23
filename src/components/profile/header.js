@@ -17,7 +17,9 @@ export default function Header({
   const handleToggleFollow = async () => {
     setIsFollowingProfile(isFollowingProfile => !isFollowingProfile);
     
-    setFollowerCount({});
+    setFollowerCount({
+      setFollowerCount: isFollowingProfile ? followerCount - 1 : followerCount + 1;
+    });
   };
   
   return(
