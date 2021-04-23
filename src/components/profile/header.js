@@ -31,7 +31,7 @@ export default function Header({
                    <button
                        className="bg-blue-500 font-bold text-sm rounded text-white w-20 h-8"
                        type="button"
-                       onClick={() => console.log('I am a button')}
+                       onClick={handleToggleFollow}
                    >
                        {isFollowingProfile ? 'Unfollow' : 'Follow'}
                    </button>
