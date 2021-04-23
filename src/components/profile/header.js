@@ -20,6 +20,7 @@ export default function Header({
     setFollowerCount({
       setFollowerCount: isFollowingProfile ? followerCount - 1 : followerCount + 1;
     });
+    // create a function called toggleFollow in the firebase service
   };
   
   return(
