@@ -14,6 +14,8 @@ export default function Header({
   const [isFollowingProfile, setIsFoloowingProfile] = useState(false);
   const activeBtnFollow = user.username && user.username !== username;
   
+  const handleToggleFollow = async () => {};
+  
   return(
     <div className="grid grid-cols-3 gap-4 justify-between mx-auto max-w-screen-lg">
        <div className="container flex justify-center">
