@@ -11,10 +11,14 @@ export default function Header({
 }){
   
   const { user } = useUser();
-  const [isFollowingProfile, setIsFoloowingProfile] = useState(false);
+  const [isFollowingProfile, setIsFollowingProfile] = useState(false);
   const activeBtnFollow = user.username && user.username !== username;
   
-  const handleToggleFollow = async () => {};
+  const handleToggleFollow = async () => {
+    setIsFollowingProfile(isFollowingProfile => !isFollowingProfile);
+    
+    setFollowerCount({});
+  };
   
   return(
     <div className="grid grid-cols-3 gap-4 justify-between mx-auto max-w-screen-lg">
