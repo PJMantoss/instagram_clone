@@ -140,5 +140,6 @@ export async function toggleFollow(
      profileId,
      followingUserId
 ){
-    await updateUserFollowing(activeUserDocId, profileId, isFollowingProfle)
+    await updateUserFollowing(activeUserDocId, profileId, isFollowingProfle);
+    await updateFollowedUserFollowers(profileDocId, followingUserId, isFollowingProfile);
 }
