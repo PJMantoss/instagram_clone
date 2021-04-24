@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Skeleton from 'react-loading-skeleton';
 import useuser from '../../hooks/use-user';
+import { toggleFollow } from '../../services/firebase';
 
 export default function Header({
   photosCount,
