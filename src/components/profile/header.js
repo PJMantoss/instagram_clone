@@ -22,6 +22,7 @@ export default function Header({
       setFollowerCount: isFollowingProfile ? followerCount - 1 : followerCount + 1;
     });
     // create a function called toggleFollow in the firebase service
+    await toggleFollow(isFollowingProfile, user.docId, profileDocId, profileUserId, user.userId);
   };
   
   return(
