@@ -132,3 +132,11 @@ export async function getUserPhotosByUsername(){
     
     return photos;
 };
+
+export async function toggleFollow(
+    isFollowingProfile,
+     activeUserDocId,
+     profileDocId,
+     profileId,
+     followingUserId
+){}
