@@ -8,7 +8,7 @@ export async function isUserFollowingProfile(activeUsername, profileUserId){
          .where('following','array-contains',profileUserId)
          .get();
     
-    return result.docs.map();
+    const [] = result.docs.map(item => ({}));
 }
 
 export async function doesUsernameExist(username){
