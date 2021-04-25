@@ -25,10 +25,14 @@ export default function Header({
     await toggleFollow(isFollowingProfile, user.docId, profileDocId, profileUserId, user.userId);
   };
   
-  useEffetc(() => {
+  useEffect(() => {
     const isLoggedInUserFollowingProfile = async () => {
       const isFollowing = await isUserFollowingProfile(user.username, profileUserId]);
       setIsFollowingProfile(isFollowingProfile);
+    };
+    
+    if(user.username && profileUserId){
+      isLoggedInUserFollowingProfile();
     }
   }, [user.username, profileUserId])
   
