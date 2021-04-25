@@ -1,6 +1,6 @@
 import { firebase, FieldValue } from '../lib/firebase';
 
-export async function isUserFollowingProfile(){}
+export async function isUserFollowingProfile(activeUsername, profileUserId){}
 
 export async function doesUsernameExist(username){
     const result = await firbase
