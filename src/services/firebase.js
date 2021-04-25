@@ -3,10 +3,12 @@ import { firebase, FieldValue } from '../lib/firebase';
 export async function isUserFollowingProfile(activeUsername, profileUserId){
     const result = await firebase
          .firestore()
-         .collection()
+         .collection('users')
+         .where('username','===', activeUsername)
          .where()
-         .where()
-         .get()
+         .get();
+    
+    return result.docs.map();
 }
 
 export async function doesUsernameExist(username){
