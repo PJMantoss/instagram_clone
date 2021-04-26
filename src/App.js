@@ -28,8 +28,16 @@ function App() {
                 >
                     <Login />
                 </isUserLoggedIn>
-                <Route path={ROUTES.LOGIN} component={Login}/>
-                <Route path={ROUTES.SIGN_UP} component={SignUp}/>
+    
+                <isUserLoggedIn
+                    user={user}
+                    loggedInPath={ROUTES.DASHBOARD}
+                    path={ROUTES.SIGN_UP}
+                >
+                    <SignUp />
+                </isUserLoggedIn>
+                
+                
                 <Route path={ROUTES.PROFILE} component={Profile}/>
                 <Route path={ROUTES.DASHBOARD} component={Dashboard} exact />
                 <Route component={NotFound}/>
