@@ -22,9 +22,9 @@ function App() {
             <Suspense fallback={<p>loading...</p>}>
               <Switch>
                 <isUserLoggedIn
-                    user={}
-                    loggedInPath={}
-                    path={}
+                    user={user}
+                    loggedInPath={ROUTES.DASHBOARD}
+                    path={ROUTES.LOGIN}
                 >
                     <Login />
                 </isUserLoggedIn>
