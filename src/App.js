@@ -21,6 +21,13 @@ function App() {
           <Router>
             <Suspense fallback={<p>loading...</p>}>
               <Switch>
+                <isUserLoggedIn
+                    user={}
+                    loggedInPath={}
+                    path={}
+                >
+                    <Login />
+                </isUserLoggedIn>
                 <Route path={ROUTES.LOGIN} component={Login}/>
                 <Route path={ROUTES.SIGN_UP} component={SignUp}/>
                 <Route path={ROUTES.PROFILE} component={Profile}/>
