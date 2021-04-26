@@ -15,6 +15,8 @@ export default function isUserLoggedIn({ user, loggedInPath, children, ...rest }
                 <Redirect to={{ pathname: loggedInPath }} />
               )
             }
+    
+           return null;
          }}
     />
   );
