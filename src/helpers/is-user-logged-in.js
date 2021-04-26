@@ -12,7 +12,7 @@ export default function isUserLoggedIn({ user, loggedInPath, children, ...rest }
     
             if(user){
               return(
-                <Redirect />
+                <Redirect to={{ pathname: loggedInPath }} />
               )
             }
          }}
