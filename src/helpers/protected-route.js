@@ -7,11 +7,11 @@ export default function ProtectedRoute({ user, children, ...rest }){
     <Route
         {...rest}
         render={() => {
-             if(!user){
+             if(user){
                return children;
              }
     
-            if(user){
+            if(!user){
               return(
                 <Redirect to={{ pathname: loggedInPath }} />
               )
