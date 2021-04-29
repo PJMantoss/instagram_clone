@@ -1,6 +1,7 @@
 import React, {lazy, Suspense} from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
+import ProtectedRoute from './helpers/protected-route';
 import IsUserLoggedIn from './helpers/is-user-logged-in';
 import UserContext from './context/user';
 import * as ROUTES from './constants/routes';
