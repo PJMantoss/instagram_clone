@@ -7,7 +7,7 @@ export default function Header({
   photosCount,
   followerCount,
   setFollowerCount,
-  username,
+  username: profileUsername,
   profile: { docId: profileDocId, userId: profileUserId, fullName, following = [] }
 }){
   
