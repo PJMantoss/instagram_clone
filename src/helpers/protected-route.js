@@ -13,7 +13,12 @@ export default function ProtectedRoute({ user, children, ...rest }){
     
             if(!user){
               return(
-                <Redirect to={{ pathname: loggedInPath }} />
+                <Redirect 
+                    to={{ 
+                        pathname: ROUTES.LOGIN, 
+                        state: { from: location } 
+                    }} 
+                />
               )
             }
     
