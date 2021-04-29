@@ -25,7 +25,7 @@ function App() {
                 <Route path={ROUTES.SIGN_UP} component={SignUp}/>
                 <Route path={ROUTES.LOGINE} component={Login}/>
                 <Route path={ROUTES.PROFILE} component={Profile}/>
-                <ProtectedRoute user={} path={} exact>
+                <ProtectedRoute user={user} path={ROUTES.DASHBOARD} exact>
                     <Dashboard />
                 </ProtectedRoute>
     
