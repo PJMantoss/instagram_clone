@@ -6,7 +6,7 @@ export default function ProtectedRoute({ user, children, ...rest }){
   return(
     <Route
         {...rest}
-        render={() => {
+        render={({ location }) => {
              if(user){
                return children;
              }
